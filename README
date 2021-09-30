@@ -1,0 +1,10 @@
+DnD Backstory Generator
+
+I decided to create this project to help reinforce what I am learning at Tech Elevator along while creating something
+useful to me. As any DnD player knows, creating a new character backstory can be a very time consuming labor of love.
+Sometimes you're inspired and have an idea, sometimes you just need a quick one for an NPC, sometimes you just need a
+starting point. That's where the DnD Backstory Generator comes in. When you need a jumping off point for a new character.
+
+A user can choose to input information such as race, class, background, age, family info, name, and location. Or if not
+the generator will randomly select choices for you. Based on these choices the generator will create a MadLibs like
+backstory filling in the blanks.

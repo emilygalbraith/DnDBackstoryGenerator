@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DnDBackstoryGenerator.iml" filepath="$PROJECT_DIR$/DnDBackstoryGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DnDBackstoryGenerator.iml" filepath="$PROJECT_DIR$/.idea/DnDBackstoryGenerator.iml" />
     </modules>
   </component>
 </project>
