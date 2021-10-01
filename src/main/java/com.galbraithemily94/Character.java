@@ -11,29 +11,21 @@ public class Character {
     private Location characterLocation;
     private Background characterBackground;
 
-    //Constants and list needed to generate race
-    private static String DRAGONBORN = "Dragonborn";
-    private static String DWARF = "Dwarf";
-    private static String ELF = "Elf";
-    private static String GNOME = "Gnome";
-    private static String HALF_ELF = "Half-Elf";
-    private static String HALFLING = "Halfling";
-    private static String HALF_ORC = "Half-Orc";
-    private static String HUMAN = "Human";
-    private static String TIEFLING = "Tiefling";
-    private List<String> raceList = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
-
+    //Constructor if they want the character to be completely random.
     public Character() {
-        characterRace = getRandomCharacterRace();
+        characterRace = generateRandomRace();
     }
+//    //Constructor if they want to pick race, actually may use setters instead
+//    public Character(String characterRace) {
+//        this.characterRace = characterRace;
+//    }
 
     public String getCharacterRace() { return characterRace; }
+    public void setCharacterRace(String characterRace) { this.characterRace = characterRace; }
 
-
-    public String getRandomCharacterRace() {
-        Collections.shuffle(raceList);
-        characterRace = raceList.remove(0);
-        return characterRace;
+    //Generate A Random Race By Calling Method in Race Class
+    public String generateRandomRace() {
+        Race randomRace = new Race();
+        return randomRace.getRandomCharacterRace();
     }
-
 }
