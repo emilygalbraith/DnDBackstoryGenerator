@@ -1,31 +1,37 @@
 package com.galbraithemily94;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class BackstoryGenerator {
-    public static void main(String[] args) {
-        //Creation of the character through user input
-        Scanner input = new Scanner(System.in);
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("Would you like to generate a new character backstory? (Y) (N) ");
-        String userAnswer = input.nextLine();
-        if(userAnswer.equals("Y")) {
-            System.out.println("Would you like this to be completely random? (Y) (N) ");
-            String randomAnswer = input.nextLine();
-            Character newCharacter = new Character();
-            if(randomAnswer.equals("Y")) {
-                System.out.println("You character is a: " + newCharacter.getCharacterRace());
-            } else {
-                System.out.println("Please pick from one of the following races: ");
-                Race race = new Race();
-                race.raceListToString();
-                String raceChoice = input.nextLine();
-                newCharacter.setCharacterRace(raceChoice);
-            }
+
+    //Constants and list needed to generate race
+    private static final String DRAGONBORN = "Dragonborn";
+    private static final String DWARF = "Dwarf";
+    private static final String ELF = "Elf";
+    private static final String GNOME = "Gnome";
+    private static final String HALF_ELF = "Half-Elf";
+    private static final String HALFLING = "Halfling";
+    private static final String HALF_ORC = "Half-Orc";
+    private static final String HUMAN = "Human";
+    private static final String TIEFLING = "Tiefling";
+    private static final List<String> raceList = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
+
+
+    //Allows Character class to set a random race
+    public String getRandomCharacterRace() {
+        Collections.shuffle(raceList);
+        String characterRace = raceList.remove(0);
+        return characterRace;
+    }
+
+    //Will print out race options to user
+    public void raceListToString() {
+        for (String race : raceList) {
+            System.out.print(race + " ");
         }
-
-        //Creation of the backstory and output of the backstory
-
-
+        System.out.println("");
     }
 }
