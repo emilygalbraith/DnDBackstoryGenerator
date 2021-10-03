@@ -1,6 +1,5 @@
 package com.galbraithemily94;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class BackstoryApplication {
@@ -9,13 +8,17 @@ public class BackstoryApplication {
         Scanner input = new Scanner(System.in);
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Would you like to generate a new character backstory? (Y) (N) ");
+        //Edits users input to match what I check against. //TODO add try/catch for any unforeseen input
         String userAnswer = input.nextLine().toUpperCase().substring(0,1);
         if(userAnswer.equals("Y")) {
-            System.out.println("Would you like to pick a race? (Y) (N) ");
-            String randomAnswer = input.nextLine().toUpperCase().substring(0,1);
+            //Create new Character object and BackstoryGenerator
             Character newCharacter = new Character();
-            BackstoryGenerator newBackStory = new BackstoryGenerator();
-            if(randomAnswer.equals("N")) {
+            Race newBackStory = new Race();
+
+            //Set race for character using BackstoryGenerator
+            System.out.println("Would you like to pick a race? (Y) (N) ");
+            String randomRace = input.nextLine().toUpperCase().substring(0,1);
+            if(randomRace.equals("N")) {
                 newCharacter.setRace(newBackStory.getRandomCharacterRace());
                 System.out.println("You character is a: " + newCharacter.getRace());
             } else {
@@ -23,6 +26,13 @@ public class BackstoryApplication {
                 newBackStory.raceListToString();
                 String raceChoice = input.nextLine();
                 newCharacter.setRace(raceChoice);
+            }
+
+            //Set age based on race using AgeGenerator
+            System.out.println("Would you like to pick an age? (Y) (N) ");
+            String randomAge = input.nextLine().toUpperCase().substring(0,1);
+            if(randomAge.equals("Y")){
+
             }
         }
 
