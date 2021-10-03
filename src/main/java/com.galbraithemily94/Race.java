@@ -1,12 +1,14 @@
 package com.galbraithemily94;
 
+import com.galbraithemily94.Races.Dragonborn;
+import com.galbraithemily94.Races.Dwarf;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Race {
-
     //Constants and list needed to generate race
     protected static final String DRAGONBORN = "Dragonborn";
     protected static final String DWARF = "Dwarf";
@@ -24,10 +26,21 @@ public class Race {
     }
 
     //Method to return a random race to set Character race with
-    public String getRandomCharacterRace() {
+    public Race getRandomCharacterRace(Character character) {
         Collections.shuffle(raceList);
         String characterRace = raceList.remove(0);
-        return characterRace;
+        if(characterRace.equals(DRAGONBORN)){
+            Dragonborn dragonborn = new Dragonborn();
+            character.setRace(dragonborn);
+            return character.getRace();
+        } if else(characterRace.equals(DWARF)){
+            Dwarf dwarf = new Dwarf();
+            character.setRace(dwarf);
+        }
+    }
+
+    public void setCharacterRace(Character character, String raceAsString) {
+
     }
 
     //Will print out race options to user
@@ -36,5 +49,9 @@ public class Race {
             System.out.print(race + " ");
         }
         System.out.println("");
+    }
+
+    public String raceToString() {
+        return "";
     }
 }

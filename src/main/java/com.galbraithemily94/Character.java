@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Character {
     private int age;
-    private String race;
+    private Race race;
     private String name;
     private String klass;
     private String background;
@@ -12,9 +12,9 @@ public class Character {
     private String locationFrom;
     private String currentLocation;
 
-    public String getRace() { return race; }
+    public Race getRace() { return race.; }
     public int getAge() { return age; }
-    public void setRace(String race) { this.race = race; }
+    public void setRace(Race race) { this.race = race; }
     public void setAge(int age) { this.age = age;}
 
 }
