@@ -1,12 +1,8 @@
 package com.galbraithemily94;
 
-import com.galbraithemily94.Races.Dragonborn;
-import com.galbraithemily94.Races.Dwarf;
+import com.galbraithemily94.Races.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Race {
     //Constants and list needed to generate race
@@ -26,21 +22,46 @@ public class Race {
     }
 
     //Method to return a random race to set Character race with
-    public Race getRandomCharacterRace(Character character) {
-        Collections.shuffle(raceList);
-        String characterRace = raceList.remove(0);
+    public void getRandomCharacterRace(Character character, String raceChoice) {
+        String characterRace;
+        if(raceChoice.equals("")) {
+            Collections.shuffle(raceList);
+            characterRace = raceList.remove(0);
+        } else {
+            characterRace = raceChoice;
+        }
         if(characterRace.equals(DRAGONBORN)){
             Dragonborn dragonborn = new Dragonborn();
             character.setRace(dragonborn);
-            return character.getRace();
-        } if else(characterRace.equals(DWARF)){
+        } else if (characterRace.equals(DWARF)){
             Dwarf dwarf = new Dwarf();
             character.setRace(dwarf);
+        } else if (characterRace.equals(ELF)){
+            Elf elf = new Elf();
+            character.setRace(elf);
+        } else if (characterRace.equals(GNOME)){
+            Gnome gnome = new Gnome();
+            character.setRace(gnome);
+        } else if (characterRace.equals(HALF_ELF)){
+            HalfElf halfElf = new HalfElf();
+            character.setRace(halfElf);
+        } else if (characterRace.equals(HALFLING)){
+            Halfling halfling = new Halfling();
+            character.setRace(halfling);
+        } else if (characterRace.equals(HALF_ORC)){
+            HalfOrc halfOrc = new HalfOrc();
+            character.setRace(halfOrc);
+        } else if (characterRace.equals(HUMAN)){
+            Human human = new Human();
+            character.setRace(human);
+        } else if (characterRace.equals(TIEFLING)){
+            Tiefling tiefling = new Tiefling();
+            character.setRace(tiefling);
         }
     }
 
-    public void setCharacterRace(Character character, String raceAsString) {
-
+    public void setRace(Character character, String raceChoice) {
+        getRandomCharacterRace(character, raceChoice);
     }
 
     //Will print out race options to user
@@ -49,9 +70,5 @@ public class Race {
             System.out.print(race + " ");
         }
         System.out.println("");
-    }
-
-    public String raceToString() {
-        return "";
     }
 }

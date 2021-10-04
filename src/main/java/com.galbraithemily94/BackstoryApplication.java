@@ -19,14 +19,14 @@ public class BackstoryApplication {
             System.out.println("Would you like to pick a race? (Y) (N) ");
             String randomRace = input.nextLine().toUpperCase().substring(0,1);
             if(randomRace.equals("N")) {
-                newCharacter.setRace(generateNewRace.getRandomCharacterRace(newCharacter));
+                generateNewRace.getRandomCharacterRace(newCharacter, "");
                 System.out.println("You character is a: " + newCharacter.getRace());
             } else {
                 System.out.println("Please pick from one of the following races: ");
                 generateNewRace.raceListToString();
                 String raceChoice = input.nextLine();
                 generateNewRace.setRace(newCharacter, raceChoice);
-//                newCharacter.setRace(raceChoice);
+                System.out.println("You're character is a: " + newCharacter.getRace().toString());
             }
 
             //Set age based on race using AgeGenerator

@@ -1,4 +1,10 @@
 package com.galbraithemily94.Races;
 
-public class Halfling {
+import com.galbraithemily94.Race;
+
+public class Halfling extends Race {
+
+    public String toString(){
+        return "Halfling";
+    }
 }

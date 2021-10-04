@@ -1,4 +1,6 @@
 package com.galbraithemily94.Races;
 
-public class HalfElf {
+import com.galbraithemily94.Race;
+
+public class HalfElf extends Race {
 }
