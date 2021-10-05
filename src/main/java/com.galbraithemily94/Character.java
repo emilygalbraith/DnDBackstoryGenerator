@@ -5,6 +5,7 @@ import java.util.Map;
 public class Character {
     private int age;
     private Race race;
+    private String raceSubType;
     private String name;
     private String klass;
     private String background;
@@ -13,8 +14,11 @@ public class Character {
     private String currentLocation;
 
     public Race getRace() { return race; }
+    public String getRaceSubType() { return raceSubType; }
+    public String getRaceToString() { return race.toString(); }
     public int getAge() { return age; }
     public void setRace(Race race) { this.race = race; }
+    public void setRaceSubType(String raceSubType) { this.raceSubType = raceSubType; }
     public void setAge(int age) { this.age = age;}
 
 }
