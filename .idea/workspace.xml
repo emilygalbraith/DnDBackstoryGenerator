@@ -7,11 +7,10 @@
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Character.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfElf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfElf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1yrKsNx3qw0zv2F7S5EkaWYkru0" />
   <component name="ProjectViewState">
@@ -80,5 +87,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="newCharacter" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

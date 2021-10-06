@@ -69,6 +69,12 @@ public class Race {
         for (String race : raceList) {
             System.out.print(race + " ");
         }
-        System.out.println("");
+        System.out.print("");
     }
+
+    //Methods that subclasses override
+    public void getRandomName(Character character) {}
+    public void ageInformation(){}
+    public void getRandomAge(Character character, String ageRange) {}
+    public void getRandomAge(Character character) {}
 }
