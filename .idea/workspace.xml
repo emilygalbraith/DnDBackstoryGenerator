@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/schoolshit/emilyharsha-java/module-1/18_Review/review-student/java" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
