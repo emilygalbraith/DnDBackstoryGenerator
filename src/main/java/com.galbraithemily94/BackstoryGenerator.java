@@ -19,10 +19,10 @@ public class BackstoryGenerator {
         if(character.getRace() == null) {
             race.getRandomCharacterRace(character, "");
             character.getRace().getRandomSubType(character);
-        } if(character.getName()== null){
-            character.getRace().getRandomName(character);
         } if(character.getGender() == null) {
             character.setRandomGender();
+        } if(character.getName() == null) {
+            character.getRace().getRandomName(character);
         } if(character.getAgeRange() == null) {
             character.getRace().getRandomAge(character);
         } else {

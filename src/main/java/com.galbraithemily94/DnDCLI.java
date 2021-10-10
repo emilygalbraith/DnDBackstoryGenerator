@@ -84,7 +84,7 @@ public class DnDCLI {
                         raceOptions = race.getRaceArray();
                         String raceChoice = (String) menu.getChoiceFromOptions(raceOptions);
                         race.setRace(newCharacter, raceChoice);
-                        raceSubTypeOptions = race.getSubTypeArray(newCharacter);
+                        raceSubTypeOptions = newCharacter.getRace().getSubTypeArray();
                         if (raceSubTypeOptions.length > 0) {
                             String subTypeChoice = (String) menu.getChoiceFromOptions(raceSubTypeOptions);
                             newCharacter.setRaceSubType(subTypeChoice);

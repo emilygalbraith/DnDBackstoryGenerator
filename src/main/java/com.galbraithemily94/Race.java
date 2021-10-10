@@ -89,9 +89,8 @@ public class Race {
     public void getRandomAge(Character character, String ageRange) {}
     public void getRandomAge(Character character) {}
     public void getRandomSubType(Character character) {}
-    public String[] getSubTypeArray(Character character) {
-        String[] raceSubTypeArray = new String[0];
-        raceSubTypeArray = character.getRace().getSubType();
-        return raceSubTypeArray;
+    public String[] getSubTypeArray() {
+        String[] subTypeArray = new String[0];
+        return subTypeArray;
     }
 }
