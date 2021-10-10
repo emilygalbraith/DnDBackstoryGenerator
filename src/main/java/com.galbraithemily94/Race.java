@@ -1,6 +1,7 @@
 package com.galbraithemily94;
 
 import com.galbraithemily94.Races.*;
+import com.galbraithemily94.View.Menu;
 
 import java.util.*;
 
@@ -16,9 +17,18 @@ public class Race {
     protected static final String HUMAN = "Human";
     protected static final String TIEFLING = "Tiefling";
     protected static final List<String> raceList = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
+    private static final String AGE_RANGE_OPTIONS_YOUNG = "Young";
+    private static final String AGE_RANGE_OPTIONS_MIDDLE_AGE = "Middle-age";
+    private static final String AGE_RANGE_OPTIONS_OLD = "Old";
+    private static final String[] AGE_RANGE_OPTIONS = {AGE_RANGE_OPTIONS_YOUNG, AGE_RANGE_OPTIONS_MIDDLE_AGE, AGE_RANGE_OPTIONS_OLD };
+
 
     public List<String> getRaceList() {
         return raceList;
+    }
+    public String[] getRaceArray() {
+        String[] raceArray = raceList.toArray(new String[0]);
+        return raceArray;
     }
 
     //Method to return a random race to set Character race with
@@ -72,9 +82,16 @@ public class Race {
         System.out.print("");
     }
 
+
     //Methods that subclasses override
     public void getRandomName(Character character) {}
     public void ageInformation(){}
     public void getRandomAge(Character character, String ageRange) {}
     public void getRandomAge(Character character) {}
+    public void getRandomSubType(Character character) {}
+    public String[] getSubTypeArray(Character character) {
+        String[] raceSubTypeArray = new String[0];
+        raceSubTypeArray = character.getRace().getSubType();
+        return raceSubTypeArray;
+    }
 }

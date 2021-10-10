@@ -3,7 +3,8 @@ package com.galbraithemily94;
 import java.util.*;
 
 public class Character {
-    private int age;
+    private int age = 0;
+    private String ageRange;
     private String gender;
     private Race race;
     private String raceSubType;
@@ -14,20 +15,23 @@ public class Character {
     private String locationFrom;
     private String currentLocation;
 
+
     //Getters
     public Race getRace() { return race; }
     public String getRaceSubType() { return raceSubType; }
     public String getRaceToString() { return race.toString(); }
     public int getAge() { return age; }
+    public String getAgeRange() { return ageRange; }
     public String getGender() { return gender; }
     public String getName() { return name; }
 
     //Setters
     public void setRace(Race race) { this.race = race; }
     public void setRaceSubType(String raceSubType) { this.raceSubType = raceSubType; }
-    public void setAge(int age) { this.age = age;}
     public void setGender(String gender) { this.gender = gender; }
     public void setName(String name) { this.name = name; }
+    public void setAge(int age) { this.age = age; }
+    public void setAgeRange(String ageRange) { this.ageRange = ageRange; }
 
     //Methods
     public void setRandomGender() {

@@ -14,6 +14,10 @@ public class Menu {
         this.in = new Scanner(input);
     }
 
+    public String getUserInput() {
+        return in.nextLine();
+    }
+
     public Object getChoiceFromOptions(Object[] options) {
         Object choice = null;
         while (choice == null) {

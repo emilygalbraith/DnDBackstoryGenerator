@@ -88,17 +88,16 @@ public class Dragonborn extends Race {
         character.setAge(age);
     }
 
-    public void draconicAncestryListToString() {
-        for (String ancestry : draconicAncestryList) {
-            System.out.print(ancestry + " ");
-        }
-        System.out.print("");
+    public String[] getSubType() {
+        String[] subTypeArray = draconicAncestryList.toArray(new String[0]);
+        return subTypeArray;
     }
 
-    public String getRandomDraconicAncestry() {
+    @Override
+    public void getRandomSubType(Character character) {
         Collections.shuffle(draconicAncestryList);
         String draconicAncestry = draconicAncestryList.remove(0);
-        return draconicAncestry;
+        character.setRaceSubType(draconicAncestry);
     }
 
     @Override
