@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Elf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Elf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Gnome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +90,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/DnDCLI.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

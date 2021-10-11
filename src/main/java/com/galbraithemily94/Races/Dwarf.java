@@ -14,7 +14,7 @@ public class Dwarf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> dwarfTypes = new ArrayList<>(Arrays.asList("Hill Dwarf", "Mountain Dwarf", "Duergar", "Mark of Warding", "Kaladesh"));
+    private List<String> dwarfTypes = new ArrayList<>(Arrays.asList("Hill", "Mountain", "Duergar", "Mark of Warding", "Kaladesh"));
 
 
     //Instance variables for character sheet
@@ -29,7 +29,6 @@ public class Dwarf extends Race {
 
     @Override
     public void getRandomName(Character character) {
-        //Clan name first(long and complex), personal name simple 1/2 syllables, soft tones, female begin of alpha, males middle
         List<String> clanNames = new ArrayList<>(Arrays.asList("Loudstorm", "Bronzebelch", "Stormsong", "Bezzaln", "Caerigert", "Darkaxe", "Firststone", "Keenaxe", "Bellavork", "Wildhelm"));
         List<String> femaleNames = new ArrayList<>(Arrays.asList("Katbera", "Naernys", "Lysmera", "Tismura", "Bylnora", "Nasmora", "Runsael", "Kaitnura", "Tizros", "Soltyn"));
         List<String> maleNames = new ArrayList<>(Arrays.asList("Krumram", "Farnom", "Randain", "Dolnik", "Thonur", "Tymar", "Vondohr", "Grenren", "Belnyl", "Belgurn"));
@@ -47,6 +46,13 @@ public class Dwarf extends Race {
     public String[] getSubTypeArray() {
         String[] subTypeArray = dwarfTypes.toArray(new String[0]);
         return subTypeArray;
+    }
+
+    @Override
+    public void getRandomSubType(Character character) {
+        Collections.shuffle(dwarfTypes);
+        String subType = dwarfTypes.remove(0);
+        character.setRaceSubType(subType);
     }
 
     @Override
