@@ -16,6 +16,7 @@ public class Dragonborn extends Race {
 
 
     //Below are things for character sheet creation.
+    List<String> languages = new ArrayList<>(Arrays.asList("Common", "Draconic"));
     private String size = "medium";
     private int height; //Standing well over 6 feet tall
     private int weight; //Averaging at almost 250lbs
@@ -23,6 +24,7 @@ public class Dragonborn extends Race {
     private int speed = 30;
     private int strengthMod = 2;
     private int charismaMod = 1;
+    private int darkvision = 0;
 
     //getters
     public int getSpeed() { return speed; }
@@ -37,28 +39,10 @@ public class Dragonborn extends Race {
         List<String> femaleNames = new ArrayList<>(Arrays.asList("Akra", "Dava", "Kordeh", "Kaar", "Nara", "Biri", "Havila", "Soina", "Fariva", "Rairi"));
         List<String> maleNames = new ArrayList<>(Arrays.asList("Medgar", "Tarv", "Patkan", "Rhov", "Krigar", "Ghekan", "Tarmash", "Pandsh", "Namash", "Rhorin"));
         List<String> nickname = new ArrayList<>(Arrays.asList("The Tablebiter", "The Fainter", "The Wallwrecker", "The Graceful", "The Wanderer", "The Growler", "The Spirited", "The Murmurer", "The Dreamer"));
-        List<String> nonBinaryNames = new ArrayList<>();
-        nonBinaryNames.addAll(femaleNames);
-        nonBinaryNames.addAll(maleNames);
-        Collections.shuffle(clanNames);
-        Collections.shuffle(femaleNames);
-        Collections.shuffle(maleNames);
         Collections.shuffle(nickname);
-        Collections.shuffle(nonBinaryNames);
-        String name;
-        if(character.getGender().equals("Females")){
-            name = String.format("%s %s %s", clanNames.remove(0), femaleNames.remove(0),nickname.remove(0));
-        } else if(character.getGender().equals("Male")){
-            name = String.format("%s %s %s", clanNames.remove(0), maleNames.remove(0),nickname.remove(0));
-        } else {
-            name = String.format("%s %s %s", clanNames.remove(0), nonBinaryNames.remove(0),nickname.remove(0));
-        }
+        Collections.shuffle(clanNames);
+        String name = clanNames.remove(0) + " " + super.getRandomName(character, femaleNames, maleNames) + nickname.remove(0);
         character.setName(name);
-    }
-
-    @Override
-    public void ageInformation(){
-        System.out.print("Dragon age quickly and could be adventuring as young as 6 years old. They live to be around 80 years old, please enter your character's age: ");
     }
 
     @Override
