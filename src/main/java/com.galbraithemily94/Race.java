@@ -17,10 +17,6 @@ public class Race {
     protected static final String HUMAN = "Human";
     protected static final String TIEFLING = "Tiefling";
     protected static final List<String> raceList = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
-    private static final String AGE_RANGE_OPTIONS_YOUNG = "Young";
-    private static final String AGE_RANGE_OPTIONS_MIDDLE_AGE = "Middle-age";
-    private static final String AGE_RANGE_OPTIONS_OLD = "Old";
-    private static final String[] AGE_RANGE_OPTIONS = {AGE_RANGE_OPTIONS_YOUNG, AGE_RANGE_OPTIONS_MIDDLE_AGE, AGE_RANGE_OPTIONS_OLD };
 
 
     public List<String> getRaceList() {
