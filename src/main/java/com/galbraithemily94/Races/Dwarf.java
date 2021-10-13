@@ -51,7 +51,7 @@ public class Dwarf extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(dwarfTypes);
-        String subType = dwarfTypes.remove(0);
+        String subType = dwarfTypes.get(0);
         character.setRaceSubType(subType);
     }
 

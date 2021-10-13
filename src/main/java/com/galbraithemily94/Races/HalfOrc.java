@@ -51,7 +51,7 @@ public class HalfOrc extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(halfOrcTypes);
-        String subType = halfOrcTypes.remove(0);
+        String subType = halfOrcTypes.get(0);
         character.setRaceSubType(subType);
     }
 

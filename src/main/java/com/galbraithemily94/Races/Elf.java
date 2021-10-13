@@ -45,7 +45,7 @@ public class Elf extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(elfTypes);
-        String subType = elfTypes.remove(0);
+        String subType = elfTypes.get(0);
         character.setRaceSubType(subType);
     }
 

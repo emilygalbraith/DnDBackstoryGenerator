@@ -9,8 +9,8 @@ public class Character {
     private Race race;
     private String raceSubType;
     private String name;
-    private String klass;
-    private String background;
+    private Klass klass;
+    private Background background;
     private Map<String, Boolean> familyInfo;
     private String locationFrom;
     private String currentLocation;
@@ -24,6 +24,9 @@ public class Character {
     public String getAgeRange() { return ageRange; }
     public String getGender() { return gender; }
     public String getName() { return name; }
+    public Klass getKlass() { return klass; }
+    public Background getBackground() { return background; }
+    public String getBackgroundToString() { return background.toString(); }
 
     //Setters
     public void setRace(Race race) { this.race = race; }
@@ -32,6 +35,8 @@ public class Character {
     public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
     public void setAgeRange(String ageRange) { this.ageRange = ageRange; }
+    public void setKlass(Klass klass) { this.klass = klass; }
+    public void setBackground(Background background) { this.background = background; }
 
     //Methods
     public void setRandomGender() {

@@ -52,7 +52,7 @@ public class HalfElf extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(halfElfTypes);
-        String subType = halfElfTypes.remove(0);
+        String subType = halfElfTypes.get(0);
         character.setRaceSubType(subType);
     }
 

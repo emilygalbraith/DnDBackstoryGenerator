@@ -16,7 +16,8 @@ public class DnDCLI {
     private static final String BACKSTORY_GENERATOR_MENU_CHOOSE_CLASS = "Choose a class";
     private static final String BACKSTORY_GENERATOR_MENU_CHOOSE_BACKGROUND = "Choose a background";
     private static final String BACKSTORY_GENERATOR_MENU_CREATE_BACKSTORY = "Create backstory";
-    private static final String[] BACKSTORY_GENERATOR_MENU = { BACKSTORY_GENERATOR_MENU_RANDOM_BACKSTORY, BACKSTORY_GENERATOR_MENU_CHOOSE_NAME, BACKSTORY_GENERATOR_MENU_CHOOSE_AGE, BACKSTORY_GENERATOR_MENU_CHOOSE_GENDER, BACKSTORY_GENERATOR_MENU_CHOOSE_RACE, BACKSTORY_GENERATOR_MENU_CHOOSE_CLASS, BACKSTORY_GENERATOR_MENU_CHOOSE_BACKGROUND, BACKSTORY_GENERATOR_MENU_CREATE_BACKSTORY };
+    private static final String BACKSTORY_GENERATOR_MENU_RETURN_TO_MAIN_MENU = "Return to main menu";
+    private static final String[] BACKSTORY_GENERATOR_MENU = { BACKSTORY_GENERATOR_MENU_RANDOM_BACKSTORY, BACKSTORY_GENERATOR_MENU_CHOOSE_NAME, BACKSTORY_GENERATOR_MENU_CHOOSE_AGE, BACKSTORY_GENERATOR_MENU_CHOOSE_GENDER, BACKSTORY_GENERATOR_MENU_CHOOSE_RACE, BACKSTORY_GENERATOR_MENU_CHOOSE_CLASS, BACKSTORY_GENERATOR_MENU_CHOOSE_BACKGROUND, BACKSTORY_GENERATOR_MENU_CREATE_BACKSTORY, BACKSTORY_GENERATOR_MENU_RETURN_TO_MAIN_MENU };
     private static final String RACE_MENU_CHOOSE_SUBTYPE = "Choose a race subtype";
     private static final String RACE_MENU_RETURN_TO_GENERATOR_MENU = "Return to generator menu";
     private static final String[] RACE_MENU_OPTIONS = {RACE_MENU_CHOOSE_SUBTYPE, RACE_MENU_RETURN_TO_GENERATOR_MENU};
@@ -30,6 +31,9 @@ public class DnDCLI {
     private static final String[] GENDER_OPTIONS = {GENDER_OPTIONS_NON_BINARY, GENDER_OPTIONS_FEMALE, GENDER_OPTIONS_MALE };
     private String[] raceOptions = {};
     private String[] raceSubTypeOptions = {};
+    private String[] klassOptions = {};
+    private String[] klassSubTypeOptions = {};
+    private String[] backgroundOptions = {};
 
     //Instance variables
     private Menu menu;
@@ -93,10 +97,15 @@ public class DnDCLI {
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CHOOSE_CLASS)) {
                         //Feature in progress
+//                        klassOptions = klass.getKlassArray();
+                        String klassChoice = (String) menu.getChoiceFromOptions(klassOptions);
+                        
                     }
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CHOOSE_BACKGROUND)){
-                        //Feature in progress
+                        backgroundOptions = background.getBackgroundArray();
+                        String backgroundChoice = (String) menu.getChoiceFromOptions(backgroundOptions);
+                        background.setCharacterBackground(newCharacter, backgroundChoice);
                     }
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CREATE_BACKSTORY)) {
@@ -104,7 +113,11 @@ public class DnDCLI {
 //                        backstoryGenerator.createBackstory();
                         System.out.println(backstoryGenerator.createBackstory());
                         isBackstory = false;
-                        }
+                    }
+
+                    if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_RETURN_TO_MAIN_MENU)) {
+                        isBackstory = false;
+                    }
                     }
                 }
 

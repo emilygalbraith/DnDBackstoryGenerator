@@ -52,7 +52,7 @@ public class Gnome extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(gnomeTypes);
-        String subType = gnomeTypes.remove(0);
+        String subType = gnomeTypes.get(0);
         character.setRaceSubType(subType);
     }
 

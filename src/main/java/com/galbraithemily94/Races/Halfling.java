@@ -52,7 +52,7 @@ public class Halfling extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(halflingTypes);
-        String subType = halflingTypes.remove(0);
+        String subType = halflingTypes.get(0);
         character.setRaceSubType(subType);
     }
 

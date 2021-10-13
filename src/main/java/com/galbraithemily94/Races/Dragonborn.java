@@ -79,7 +79,7 @@ public class Dragonborn extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(draconicAncestryList);
-        String draconicAncestry = draconicAncestryList.remove(0);
+        String draconicAncestry = draconicAncestryList.get(0);
         character.setRaceSubType(draconicAncestry);
     }
 

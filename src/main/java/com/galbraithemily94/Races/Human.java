@@ -50,7 +50,7 @@ public class Human extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(humanTypes);
-        String subType = humanTypes.remove(0);
+        String subType = humanTypes.get(0);
         character.setRaceSubType(subType);
     }
 

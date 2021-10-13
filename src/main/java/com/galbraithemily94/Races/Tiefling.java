@@ -50,7 +50,7 @@ public class Tiefling extends Race {
     @Override
     public void getRandomSubType(Character character) {
         Collections.shuffle(tieflingTypes);
-        String subType = tieflingTypes.remove(0);
+        String subType = tieflingTypes.get(0);
         character.setRaceSubType(subType);
     }
 

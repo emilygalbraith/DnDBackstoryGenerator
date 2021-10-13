@@ -1,7 +1,6 @@
 package com.galbraithemily94;
 
 import com.galbraithemily94.Races.*;
-import com.galbraithemily94.View.Menu;
 
 import java.util.*;
 
@@ -16,14 +15,14 @@ public class Race {
     protected static final String HALF_ORC = "Half-Orc";
     protected static final String HUMAN = "Human";
     protected static final String TIEFLING = "Tiefling";
-    protected static final List<String> raceList = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
+    protected static final List<String> RACE_LIST = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
 
 
     public List<String> getRaceList() {
-        return raceList;
+        return RACE_LIST;
     }
     public String[] getRaceArray() {
-        String[] raceArray = raceList.toArray(new String[0]);
+        String[] raceArray = RACE_LIST.toArray(new String[0]);
         return raceArray;
     }
 
@@ -56,8 +55,8 @@ public class Race {
     public void getRandomCharacterRace(Character character, String raceChoice) {
         String characterRace;
         if(raceChoice.equals("")) {
-            Collections.shuffle(raceList);
-            characterRace = raceList.remove(0);
+            Collections.shuffle(RACE_LIST);
+            characterRace = RACE_LIST.get(0);
         } else {
             characterRace = raceChoice;
         }
