@@ -49,7 +49,7 @@ public class Character {
     }
 
     public void setPronoun() {
-        switch (pronoun) {
+        switch (gender) {
             case "Female":
                 pronoun = "Her";
                 break;

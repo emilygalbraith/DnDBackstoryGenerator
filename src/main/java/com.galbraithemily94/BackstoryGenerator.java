@@ -10,7 +10,7 @@ public class BackstoryGenerator {
     public String createBackstory(){
         characterInspection();
         //TODO create backstory "mad libs"
-        String characterInfo = String.format("Name: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s \n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
+        String characterInfo = String.format("\nName: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s \n\n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
         String earlyLife = createEarlyChildhood();
         return characterInfo + earlyLife;
     }

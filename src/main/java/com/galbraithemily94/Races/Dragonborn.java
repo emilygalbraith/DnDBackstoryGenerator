@@ -91,7 +91,9 @@ public class Dragonborn extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        earlyLives.add("sitting amongst a group of Dragonborn children, listening to the history of their clan");
+        earlyLives.add("receiving a stern lecture from an elder after goofying off in class");
+        earlyLives.add("basking in the praise of an elder after besting all the other children in combat lessons");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

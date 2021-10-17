@@ -64,7 +64,7 @@ public class DnDCLI {
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_RANDOM_BACKSTORY)) {
                         //Feature in progress
-                        backstoryGenerator.createBackstory();
+                        System.out.println(backstoryGenerator.createBackstory());
                         isBackstory = false;
                     }
 

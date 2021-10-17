@@ -83,7 +83,8 @@ public class Dwarf extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        earlyLives.add("the sound of pickaxes clashing with rock in the distance while father laboured upon a new mythril axe for the King");
+        earlyLives.add("the loud hooting and hollering of the whole clan in celebration around the feast table");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

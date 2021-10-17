@@ -81,7 +81,7 @@ public class Elf extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        earlyLives.add("listening to playful songs about the wildlife passing them by as they traveled with their wares to the next town");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }
