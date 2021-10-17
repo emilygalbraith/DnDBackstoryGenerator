@@ -78,4 +78,12 @@ public class Tiefling extends Race {
         age = allAges;
         character.setAge(age);
     }
+
+    @Override
+    public String getEarlyLife() {
+        List<String> earlyLives = new ArrayList<>();
+        earlyLives.add("");
+        Collections.shuffle(earlyLives);
+        return earlyLives.get(0);
+    }
 }

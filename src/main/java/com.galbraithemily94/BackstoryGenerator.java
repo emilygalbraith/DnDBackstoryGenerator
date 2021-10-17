@@ -10,8 +10,9 @@ public class BackstoryGenerator {
     public String createBackstory(){
         characterInspection();
         //TODO create backstory "mad libs"
-        String testStory = String.format("Name: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
-        return testStory;
+        String characterInfo = String.format("Name: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s \n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
+        String earlyLife = createEarlyChildhood();
+        return characterInfo + earlyLife;
     }
 
     public void characterInspection(){
@@ -32,5 +33,10 @@ public class BackstoryGenerator {
             background.getRandomBackground(character, "");
         }
         //TODO add checks for all other character attributes
+    }
+
+    public String createEarlyChildhood() {
+        String earlyChildhood = String.format("%s's first memories are of %s. %s childhood %s. \n", character.getName(), character.getRace().getEarlyLife(), character.getPronoun(), character.getBackground().getEarlyLife());
+        return earlyChildhood;
     }
 }

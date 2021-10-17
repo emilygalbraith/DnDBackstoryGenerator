@@ -19,7 +19,7 @@ public class Dragonborn extends Race {
     List<String> languages = new ArrayList<>(Arrays.asList("Common", "Draconic"));
     private String size = "medium";
     private int height; //Standing well over 6 feet tall
-    private int weight; //Averaging at almost 250lbs
+    private int weight; //Averaging at almost 300lbs
     private String alignment; //Tend towards good or evil in extremes
     private int speed = 30;
     private int strengthMod = 2;
@@ -86,5 +86,13 @@ public class Dragonborn extends Race {
     @Override
     public String toString(){
         return "Dragonborn";
+    }
+
+    @Override
+    public String getEarlyLife() {
+        List<String> earlyLives = new ArrayList<>();
+        earlyLives.add("");
+        Collections.shuffle(earlyLives);
+        return earlyLives.get(0);
     }
 }

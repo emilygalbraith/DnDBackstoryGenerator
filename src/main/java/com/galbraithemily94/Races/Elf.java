@@ -78,4 +78,12 @@ public class Elf extends Race {
         return "Elf";
     }
 
+    @Override
+    public String getEarlyLife() {
+        List<String> earlyLives = new ArrayList<>();
+        earlyLives.add("");
+        Collections.shuffle(earlyLives);
+        return earlyLives.get(0);
+    }
+
 }

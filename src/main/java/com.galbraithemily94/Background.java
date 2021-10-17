@@ -115,4 +115,6 @@ public class Background {
         }
     }
 
+    public String getEarlyLife() { return ""; }
+
 }

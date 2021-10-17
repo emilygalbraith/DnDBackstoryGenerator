@@ -3,9 +3,10 @@ package com.galbraithemily94;
 import java.util.*;
 
 public class Character {
-    private int age = 0;
+    private int age;
     private String ageRange;
     private String gender;
+    private String pronoun;
     private Race race;
     private String raceSubType;
     private String name;
@@ -23,6 +24,7 @@ public class Character {
     public int getAge() { return age; }
     public String getAgeRange() { return ageRange; }
     public String getGender() { return gender; }
+    public String getPronoun() { return pronoun; }
     public String getName() { return name; }
     public Klass getKlass() { return klass; }
     public Background getBackground() { return background; }
@@ -31,7 +33,7 @@ public class Character {
     //Setters
     public void setRace(Race race) { this.race = race; }
     public void setRaceSubType(String raceSubType) { this.raceSubType = raceSubType; }
-    public void setGender(String gender) { this.gender = gender; }
+    public void setGender(String gender) { this.gender = gender; setPronoun();}
     public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
     public void setAgeRange(String ageRange) { this.ageRange = ageRange; }
@@ -43,6 +45,22 @@ public class Character {
         List<String> genders = new ArrayList<>(Arrays.asList("Male", "Female", "Non-binary"));
         Collections.shuffle(genders);
         setGender(genders.remove(0));
+        setPronoun();
     }
+
+    public void setPronoun() {
+        switch (pronoun) {
+            case "Female":
+                pronoun = "Her";
+                break;
+            case "Male":
+                pronoun = "His";
+                break;
+            case "Non-binary":
+                pronoun = "Their";
+                break;
+        }
+    }
+
 
 }
