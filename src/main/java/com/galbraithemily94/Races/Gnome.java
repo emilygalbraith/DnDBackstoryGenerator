@@ -84,9 +84,11 @@ public class Gnome extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        String gnome1 = "\n";
-        String gnome2 = "\n";
-        earlyLives.add("");
+        String gnome1 = "\nGnomes have endless enthusiasm for life, despite how long they lives they never get bored and instead worry of not having time for all the want to do.";
+        String gnome2 = "\nGnomes are known for the ingenuity as skilled engineers, alchemists, tinkers, and inventors.";
+        earlyLives.add("encouraged to chase every last curiosity, from attempting flight to attempting to dig straight through the world." + gnome1 + "\nThere was never a dull moment, unless a bone needed time to heal");
+        earlyLives.add("helping design new toys at their parents shop in the city." + gnome2 + "\nNot all designs ended up a success... or safe, but some ended up being popular");
+        earlyLives.add("passing from town to town with their parents, selling remedies and chasing rare ingredients." + gnome2 + "\nThink honest snake oil salesman");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

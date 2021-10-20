@@ -84,7 +84,11 @@ public class HalfElf extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        String halfElf1 = "\nHalf elves live between two worlds. Welcome by humans, but outliving them. Less welcomed by elves, and often feeling restless in their timeless societies.";
+        String halfElf2 = "\nHalf elves tend to be driven by wanderlust because of their long lives and lack of a true home or people.";
+        String halfElf3 = "\nHalf elves inherit their ambition, curiosity, and inventiveness from humans and love of nature and whimsy from elves.";
+        earlyLives.add("amongst humans in a bustling city. Often seeking out quiet dilapidated areas where wild plants fought to take root." + halfElf3 + "\nWhile happy amongst humans, sometimes the lack of nature felt suffocating");
+        earlyLives.add("amongst elves always feeling a bit out of step with their peers." + halfElf1 + "\nSneaking off to a nearby city was life altering, feeling the energy of human life. Like a fast burning candle");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }
