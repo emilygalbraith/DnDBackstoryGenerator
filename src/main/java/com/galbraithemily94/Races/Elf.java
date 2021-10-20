@@ -81,7 +81,12 @@ public class Elf extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("listening to playful songs about the wildlife passing them by as they traveled with their wares to the next town");
+        String elf1 = "\nElves desire to live in balance with the wild, understand it rather than control it.";
+        String elf2 = "\nElves value the pursuit of arcane knowledge and the written word.";
+        String elf3 = "\nDue to their long lives, elves value tradition and careful action.";
+        earlyLives.add("listening to their mother's playful and educational songs about the wildlife while exploring." + elf1 + "\nCombine that with being a druid, it was her greatest hope to guide her child to intimately understand the wild");
+        earlyLives.add("studying ancient tomes alongside the other children." + elf2 + "\nIt was assumed they all would become wizards in time");
+        earlyLives.add("as the child of the clan's oracle, listening and watching prophecies be shared." + elf3 + "\nThese prophecies were deeply rooted in tradition here, no important call was made without consulting the oracle");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

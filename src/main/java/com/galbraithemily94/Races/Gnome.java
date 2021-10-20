@@ -84,6 +84,8 @@ public class Gnome extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
+        String gnome1 = "\n";
+        String gnome2 = "\n";
         earlyLives.add("");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);

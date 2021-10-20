@@ -91,9 +91,11 @@ public class Dragonborn extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("sitting amongst a group of Dragonborn children, listening to the history of their clan");
-        earlyLives.add("receiving a stern lecture from an elder after goofying off in class");
-        earlyLives.add("basking in the praise of an elder after besting all the other children in combat lessons");
+        String dragonborn1 = "\nDragonborn are typically raised by one parent 3 years after hatching with help of whole clan.";
+        String dragonborn2 = "\nTo a Dragonborn honor is more important than life itself, and cowardice outright repulsive.";
+        earlyLives.add("a diligent student under the guidance of the whole clan. " + dragonborn1 + "\nEach elder helped excellence be achieved through lectures on clan history, combat, various trades, and honor");
+        earlyLives.add("amongst the disapproving and constant gazes of the clan. " + dragonborn2 + "\nTurns out, the elders and clan additionally didn't appreciate a care free spirit prone to mischief and pranks");
+        earlyLives.add("as the child of the clan leader with high expectations to meet. " + dragonborn2 + "\nObsessive training led to basking in praise of the clan");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

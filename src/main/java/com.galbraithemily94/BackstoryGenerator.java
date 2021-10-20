@@ -36,7 +36,7 @@ public class BackstoryGenerator {
     }
 
     public String createEarlyChildhood() {
-        String earlyChildhood = String.format("%s's first memories are of %s. %s childhood %s. \n", character.getName(), character.getRace().getEarlyLife(), character.getPronoun(), character.getBackground().getEarlyLife());
+        String earlyChildhood = String.format("%s grew up %s. %s childhood %s. \n", character.getName(), character.getRace().getEarlyLife(), character.getPronoun(), character.getBackground().getEarlyLife());
         return earlyChildhood;
     }
 }
