@@ -5,10 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Acolyte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Charlatan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Criminal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Entertainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/FolkHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Gladiator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/GuildArtisan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Hermit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Noble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Outlander.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Pirate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sailor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Soldier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Urchin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Dragonborn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Dwarf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Elf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Gnome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfElf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfOrc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Halfling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Tiefling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/View/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Gnome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Gnome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Gnome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfElf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfElf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/HalfElf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/HalfElf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Halfling.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Halfling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Acolyte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Charlatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Criminal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Entertainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/FolkHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Gladiator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/GuildArtisan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Hermit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Knight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Noble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Outlander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Pirate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Sage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Sailor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Soldier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Backgrounds/Urchin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dragonborn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Dwarf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Elf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Gnome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfElf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/HalfOrc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Halfling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/Races/Tiefling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/galbraithemily94/View/Menu.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +87,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1yrKsNx3qw0zv2F7S5EkaWYkru0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -85,6 +141,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
