@@ -82,7 +82,11 @@ public class Human extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        String human1 = "\n";
+        String human2 = "\n";
+        earlyLives.add("" + human1 + "\n");
+        earlyLives.add("" + human1 + "\n");
+        earlyLives.add("" + human1 + "\n");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

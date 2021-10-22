@@ -82,7 +82,11 @@ public class Tiefling extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        String tiefling1 = "\n";
+        String tiefling2 = "\n";
+        earlyLives.add("" + tiefling1 + "\n");
+        earlyLives.add("" + tiefling1 + "\n");
+        earlyLives.add("" + tiefling1 + "\n");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

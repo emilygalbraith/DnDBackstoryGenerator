@@ -83,7 +83,11 @@ public class HalfOrc extends Race {
     @Override
     public String getEarlyLife() {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        String halfOrc1 = "\nHalf-Orcs are unwelcome almost everywhere, and thus are known to thrive in challenging environments.";
+        String halfOrc2 = "\nHalf-Orcs are known to be free-spirited, brash, and typically underestimated due to their ability to be cunning.";
+        earlyLives.add("an orc tribe as the child of their leader" + halfOrc1 + "\nThey were often the target of bullying by Orcs, viewed as weaker and inferior to them");
+        earlyLives.add("in a band of Half-Orc mercenaries." + halfOrc2 + "\nThey traveled where ever money led them, and dreamed of the day they could join as a warrior");
+        earlyLives.add("on the outskirts of a human village, the child of a blacksmith." + halfOrc1 + "\nAlthough some had accepted their family after all these years, it was lonely");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }
