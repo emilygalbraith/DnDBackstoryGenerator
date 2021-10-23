@@ -6,7 +6,7 @@ public class Character {
     private int age;
     private String ageRange;
     private String gender;
-    private String possessivePronoun;
+    private String possessivePronoun; //his, her, their
     private String subjectPronoun; //he, she, they
     private String objectPronoun; // her, him, them
     private Race race;
