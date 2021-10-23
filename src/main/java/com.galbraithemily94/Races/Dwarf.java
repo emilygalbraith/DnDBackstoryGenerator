@@ -81,13 +81,13 @@ public class Dwarf extends Race {
     }
 
     @Override
-    public String getEarlyLife() {
+    public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
         String dwarf1 = "\nTo dwarves loyalty is a way of life that should striven for and rewarded.";
         String dwarf2 = "\nDwarves are known for their masterful craftsmanship and avarice.";
         earlyLives.add("amongst the distant sound of pickaxes clashing with rock." + dwarf2 + "\nHelping mine mythril was hard and proud work, as it enabled the clan to both create legendary weapons and amass wealth");
-        earlyLives.add("with dreams of taking a spot in the Queen's guard." + dwarf1 + "\nGenerations of their family were honored members of this guard. A testament to their steadfast loyalty");
-        earlyLives.add("listening to passionate lectures on the crafting of fine jewelry." + dwarf2 + "\nThe fact that their family's pieces decorated the King himself meant they were the best of the best");
+        earlyLives.add("with dreams of taking a spot in the Queen's guard." + dwarf1 + "\nGenerations of " + character.getPossessivePronoun().toLowerCase() + " family were honored members of this guard. A testament to their steadfast loyalty");
+        earlyLives.add("listening to passionate lectures on the crafting of fine jewelry." + dwarf2 + "\nThe fact that " + character.getPossessivePronoun().toLowerCase() + " family's pieces decorated the King himself meant they were the best of the best");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

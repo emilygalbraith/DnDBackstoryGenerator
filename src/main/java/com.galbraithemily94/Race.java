@@ -114,5 +114,5 @@ public class Race {
         String[] subTypeArray = new String[0];
         return subTypeArray;
     }
-    public String getEarlyLife() { return ""; }
+    public String getEarlyLife(Character character) { return ""; }
 }

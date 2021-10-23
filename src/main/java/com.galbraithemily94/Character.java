@@ -6,7 +6,9 @@ public class Character {
     private int age;
     private String ageRange;
     private String gender;
-    private String pronoun;
+    private String possessivePronoun;
+    private String subjectPronoun; //he, she, they
+    private String objectPronoun; // her, him, them
     private Race race;
     private String raceSubType;
     private String name;
@@ -24,7 +26,9 @@ public class Character {
     public int getAge() { return age; }
     public String getAgeRange() { return ageRange; }
     public String getGender() { return gender; }
-    public String getPronoun() { return pronoun; }
+    public String getPossessivePronoun() { return possessivePronoun; }
+    public String getSubjectPronoun() { return subjectPronoun; }
+    public String getObjectPronoun() { return objectPronoun; }
     public String getName() { return name; }
     public Klass getKlass() { return klass; }
     public Background getBackground() { return background; }
@@ -33,7 +37,7 @@ public class Character {
     //Setters
     public void setRace(Race race) { this.race = race; }
     public void setRaceSubType(String raceSubType) { this.raceSubType = raceSubType; }
-    public void setGender(String gender) { this.gender = gender; setPronoun();}
+    public void setGender(String gender) { this.gender = gender; setPronouns();}
     public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
     public void setAgeRange(String ageRange) { this.ageRange = ageRange; }
@@ -45,19 +49,25 @@ public class Character {
         List<String> genders = new ArrayList<>(Arrays.asList("Male", "Female", "Non-binary"));
         Collections.shuffle(genders);
         setGender(genders.remove(0));
-        setPronoun();
+        setPronouns();
     }
 
-    public void setPronoun() {
+    public void setPronouns() {
         switch (gender) {
             case "Female":
-                pronoun = "Her";
+                possessivePronoun = "Her";
+                subjectPronoun = "She";
+                objectPronoun = "Her";
                 break;
             case "Male":
-                pronoun = "His";
+                possessivePronoun = "His";
+                subjectPronoun = "He";
+                objectPronoun = "Him";
                 break;
             case "Non-binary":
-                pronoun = "Their";
+                possessivePronoun = "Their";
+                subjectPronoun = "They";
+                objectPronoun = "Them";
                 break;
         }
     }

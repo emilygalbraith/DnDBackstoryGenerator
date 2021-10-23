@@ -89,7 +89,7 @@ public class Dragonborn extends Race {
     }
 
     @Override
-    public String getEarlyLife() {
+    public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
         String dragonborn1 = "\nDragonborn are typically raised by one parent 3 years after hatching with help of whole clan.";
         String dragonborn2 = "\nTo a Dragonborn honor is more important than life itself, and cowardice outright repulsive.";

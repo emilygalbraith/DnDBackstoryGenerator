@@ -2,10 +2,7 @@ package com.galbraithemily94.Races;
 import com.galbraithemily94.Character;
 import com.galbraithemily94.Race;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Elf extends Race {
     //Instance variables
@@ -79,12 +76,12 @@ public class Elf extends Race {
     }
 
     @Override
-    public String getEarlyLife() {
+    public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
         String elf1 = "\nElves desire to live in balance with the wild, understand it rather than control it.";
         String elf2 = "\nElves value the pursuit of arcane knowledge and the written word.";
         String elf3 = "\nDue to their long lives, elves value tradition and careful action.";
-        earlyLives.add("listening to their mother's playful and educational songs about the wildlife while exploring." + elf1 + "\nCombine that with being a druid, it was her greatest hope to guide her child to intimately understand the wild");
+        earlyLives.add("listening to  " + character.getPossessivePronoun().toLowerCase() + "  mother's playful and educational songs about the wildlife while exploring." + elf1 + "\nCombine that with being a druid, it was her greatest hope to guide her child to intimately understand the wild");
         earlyLives.add("studying ancient tomes alongside the other children." + elf2 + "\nIt was assumed they all would become wizards in time");
         earlyLives.add("as the child of the clan's oracle, listening and watching prophecies be shared." + elf3 + "\nThese prophecies were deeply rooted in tradition here, no important call was made without consulting the oracle");
         Collections.shuffle(earlyLives);

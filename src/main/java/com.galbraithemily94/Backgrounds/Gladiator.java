@@ -1,6 +1,7 @@
 package com.galbraithemily94.Backgrounds;
 
 import com.galbraithemily94.Background;
+import com.galbraithemily94.Character;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +12,7 @@ public class Gladiator extends Background {
     public String toString(){ return "Gladiator"; }
 
     @Override
-    public String getEarlyLife() {
+    public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
         earlyLives.add("");
         Collections.shuffle(earlyLives);

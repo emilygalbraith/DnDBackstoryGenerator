@@ -80,13 +80,13 @@ public class Tiefling extends Race {
     }
 
     @Override
-    public String getEarlyLife() {
+    public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        String tiefling1 = "\n";
-        String tiefling2 = "\n";
-        earlyLives.add("" + tiefling1 + "\n");
-        earlyLives.add("" + tiefling1 + "\n");
-        earlyLives.add("" + tiefling1 + "\n");
+        String tiefling1 = "\nTieflings tend to be proud and secretive by nature.";
+        String tiefling2 = "\nDue to their evil ancestry, Tieflings are often unfairly outright hated.";
+        earlyLives.add("in a small city where " + character.getPossessivePronoun().toLowerCase() + " parents owned a small shop." + tiefling2 + "\nDespite the terrible treatment, they were determined to change people's perception");
+        earlyLives.add("amongst a thieves guild in bustling city." + tiefling1 + "\nMany of the Tieflings in this guild saw it as a chance to get even for wrongs done to them");
+        earlyLives.add("traveling from village to village selling wares." + tiefling2 + "\nIt was easier to live a nomadic life than deal with people's hostilities");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

@@ -115,6 +115,6 @@ public class Background {
         }
     }
 
-    public String getEarlyLife() { return ""; }
+    public String getEarlyLife(Character character) { return ""; }
 
 }
