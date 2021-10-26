@@ -84,11 +84,11 @@ public class Gnome extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        String gnome1 = "\nGnomes have endless enthusiasm for life, despite how long they live they never get bored and instead worry of not having time for all they want to do.";
-        String gnome2 = "\nGnomes are known for the ingenuity as skilled engineers, alchemists, tinkers, and inventors.";
-        earlyLives.add("encouraged to chase every last curiosity, from attempting flight to trying to dig straight through to the other side of the world." + gnome1 + "\nThere was never a dull moment... unless a bone needed time to heal");
-        earlyLives.add("helping design new toys at  " + character.getPossessivePronoun().toLowerCase() + "  parents shop in the city." + gnome2 + "\nNot all designs ended up a success... or safe, but some ended up being popular");
-        earlyLives.add("passing from town to town with  " + character.getPossessivePronoun().toLowerCase() + " parents, selling remedies and chasing rare ingredients." + gnome2 + "Think honest snake oil salesman");
+        String gnome1 = " Gnomes have endless enthusiasm for life, despite how long they live they never get bored and instead worry of not having time for all they want to do.";
+        String gnome2 = " Gnomes are known for the ingenuity as skilled engineers, alchemists, tinkers, and inventors.";
+        earlyLives.add("encouraged to chase every last curiosity, from attempting flight to trying to dig straight through to the other side of the world." + gnome1 + " There was never a dull moment... unless a bone needed time to heal");
+        earlyLives.add("helping design new toys at  " + character.getPossessivePronoun().toLowerCase() + "  parents shop in the city." + gnome2 + " Not all designs ended up a success... or safe, but some ended up being popular");
+        earlyLives.add("passing from town to town with  " + character.getPossessivePronoun().toLowerCase() + " parents, selling remedies and chasing rare ingredients." + gnome2 + " Think honest snake oil salesman");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

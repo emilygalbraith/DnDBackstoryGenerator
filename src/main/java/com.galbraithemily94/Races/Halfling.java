@@ -84,12 +84,12 @@ public class Halfling extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        String halfling1 = "\nHalflings value family, community, and the simple pleasures of life beyond all else.";
-        String halfling2 = "\nHalfings love stories and legends and tend to have a strong oral tradition.";
-        String halfling3 = "\nHaflings love discovering new things, even simple things like new exotic food or unfamiliar clothing.";
-        earlyLives.add("in an idyllic village of halflings." + halfling1 + "\nAs " + character.getPossessivePronoun().toLowerCase() + " family ran the tavern, life was filled with what mattered. Good food, company, and songs");
-        earlyLives.add("looking forward to the evening when Euphemia would sing songs and stories at the tavern." + halfling2 + "\nThe best one was of a halfling who helped a band of dwarves outsmart and defeat a dragon");
-        earlyLives.add("in a traveling community of halflings." + halfling3 + "\nLife never got boring, seeing so many new places meant always having new curiosities to explore");
+        String halfling1 = " Halflings value family, community, and the simple pleasures of life beyond all else.";
+        String halfling2 = " Halfings love stories and legends and tend to have a strong oral tradition.";
+        String halfling3 = " Haflings love discovering new things, even simple things like new exotic food or unfamiliar clothing.";
+        earlyLives.add("in an idyllic village of halflings." + halfling1 + " As " + character.getPossessivePronoun().toLowerCase() + " family ran the tavern, life was filled with what mattered. Good food, company, and songs");
+        earlyLives.add("looking forward to the evening when Euphemia would sing songs and stories at the tavern." + halfling2 + " The best one was of a halfling named Bilbo who helped a band of dwarves outsmart and defeat a dragon named Smog");
+        earlyLives.add("in a traveling community of halflings." + halfling3 + " Life never got boring, seeing so many new places meant always having new curiosities to explore");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

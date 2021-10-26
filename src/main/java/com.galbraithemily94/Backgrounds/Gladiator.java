@@ -14,7 +14,7 @@ public class Gladiator extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        earlyLives.add("took an unfortunate twist when " + character.getPossessivePronoun().toLowerCase() + " community was attacked by a band of Bugbears and the survivors were taken back to their camp. They were all forced to fight in the arena as gladiators to amuse the Bugbears. " + character.getSubjectPronoun() + " luckily survived long enough to escape, but not without some haunting memories");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

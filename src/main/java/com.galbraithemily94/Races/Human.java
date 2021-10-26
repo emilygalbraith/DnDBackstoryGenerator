@@ -84,8 +84,8 @@ public class Human extends Race {
         List<String> earlyLives = new ArrayList<>();
 //        String human1 = "\n";
 //        String human2 = "\n";
-        earlyLives.add("in a quiet pastoral village helping on the family farm." + "\nIt was happy, yet left plenty of time to dream of different places");
-        earlyLives.add("in a vibrant city full of stories and their heroes." + "\nHowever, as a child of their servant it always seemed like someone else's fairytale");
+        earlyLives.add("in a quiet pastoral village helping on the family farm." + " It was happy, yet left plenty of time to dream of different places");
+        earlyLives.add("in a vibrant city full of stories and their heroes." + " However, as a child of their servant it always seemed like someone else's fairytale");
 //        earlyLives.add("" + "\n");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
