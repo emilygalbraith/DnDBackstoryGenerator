@@ -14,7 +14,7 @@ public class Noble extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        earlyLives.add(" ended up being rather pampered after a family member's sudden rise in station");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

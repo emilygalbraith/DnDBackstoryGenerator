@@ -110,7 +110,6 @@ public class DnDCLI {
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CREATE_BACKSTORY)) {
                         //Feature in progress
-//                        backstoryGenerator.createBackstory();
                         System.out.println(backstoryGenerator.createBackstory());
                         isBackstory = false;
                     }
@@ -125,6 +124,7 @@ public class DnDCLI {
             if(choice.equals(MAIN_MENU_OPTION_GENERATE_SHEET)){
                 boolean isCreateSheet = true;
                 while(isCreateSheet) {
+                    System.out.println("This feature isn't available yet.");
                     //Until this feature is built this is set to just return to main menu
                     isCreateSheet = false;
                 }

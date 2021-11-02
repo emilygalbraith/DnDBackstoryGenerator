@@ -14,7 +14,7 @@ public class Human extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> humanTypes = new ArrayList<>(Arrays.asList("Mark of Handling", "Mark of Finding", "Mark of Making", "Mark of Passage", "Mark of Sentinel", "Keldon", "Gavony", "Kessig", "Nephalia", "Stensia"));
+    private List<String> humanTypes = new ArrayList<>(Arrays.asList(""));
 
 
     //Instance variables for character sheet
@@ -85,7 +85,7 @@ public class Human extends Race {
 //        String human1 = "\n";
 //        String human2 = "\n";
         earlyLives.add("in a quiet pastoral village helping on the family farm." + " It was happy, yet left plenty of time to dream of different places");
-        earlyLives.add("in a vibrant city full of stories and their heroes." + " However, as a child of their servant it always seemed like someone else's fairytale");
+        earlyLives.add("in a vibrant city full of stories and their heroes." + " However, as a child of one of those heroes' servants it always seemed like someone else's fairytale");
 //        earlyLives.add("" + "\n");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);

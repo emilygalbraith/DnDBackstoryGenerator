@@ -14,7 +14,7 @@ public class HalfOrc extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halfOrcTypes = new ArrayList<>(Arrays.asList("Mark of Gruumsh", "Mark of Finding"));
+    private List<String> halfOrcTypes = new ArrayList<>(Arrays.asList("Gruumsh", ""));
 
 
     //Instance variables for character sheet
@@ -84,7 +84,7 @@ public class HalfOrc extends Race {
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
         String halfOrc1 = " Half-Orcs are unwelcome almost everywhere, among humans or orcs, and thus are known to thrive in challenging environments.";
-        String halfOrc2 = " Half-Orcs are known to be free-spirited, brash, and typically underestimated due to their ability to be cunning.";
+        String halfOrc2 = " Half-Orcs are known to be free-spirited, brash, and typically underestimated due to Orc heritage despite their ability to be cunning.";
         earlyLives.add("an orc tribe as the child of their chief." + halfOrc1 + " " + character.getSubjectPronoun() + " often ended up the target of bullying by orcs, viewed as weaker and inferior to them");
         earlyLives.add("in a band of Half-Orc mercenaries." + halfOrc2 + " They traveled where ever money led them, and " + character.getSubjectPronoun().toLowerCase() + " dreamed of the day " + character.getSubjectPronoun().toLowerCase() + " could join as a warrior");
         earlyLives.add("on the outskirts of a human village, the child of a blacksmith." + halfOrc1 + " Although some had accepted their family after all these years, it was lonely");

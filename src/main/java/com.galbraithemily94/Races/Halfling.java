@@ -15,7 +15,7 @@ public class Halfling extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halflingTypes = new ArrayList<>(Arrays.asList("Lightfoot", "Stout", "Ghostwise", "Lotusden", "Mark of Hospitality", "Mark of Healing"));
+    private List<String> halflingTypes = new ArrayList<>(Arrays.asList("Lightfoot", "Stout"));
 
 
     //Instance variables for character sheet

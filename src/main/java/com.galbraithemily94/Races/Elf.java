@@ -10,7 +10,7 @@ public class Elf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> elfTypes = new ArrayList<>(Arrays.asList("Dark Elf", "Eladrin", "High", "Sea", "Shadar-Kai", "Wood", "Pallid", "Mark of Shadow", "Avariel", "Grugach", "Bishtahar", "Tirahar", "Vahadar", "Zendikar", "Astral"));
+    private List<String> elfTypes = new ArrayList<>(Arrays.asList("Dark Elf", "High", "Wood"));
 
 
     //Instance variables for character sheet

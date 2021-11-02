@@ -15,7 +15,7 @@ public class HalfElf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halfElfTypes = new ArrayList<>(Arrays.asList("Aquatic", "Drow", "High", "Mark of Detection", "Mark of Storm", "Wood"));
+    private List<String> halfElfTypes = new ArrayList<>(Arrays.asList("Dark Elf", "High", "Wood"));
 
 
     //Instance variables for character sheet

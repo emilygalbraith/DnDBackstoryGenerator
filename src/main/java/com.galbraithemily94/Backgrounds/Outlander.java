@@ -14,7 +14,12 @@ public class Outlander extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
-        earlyLives.add("");
+        String outlander1 = "ended up being spent more and more out in the wild as " + character.getPossessivePronoun().toLowerCase() + " skills for survival began to shine. ";
+        String outlander2 = " Then one day, home became the wilderness. " + character.getSubjectPronoun();
+        earlyLives.add(outlander1 + outlander2 + " occasionally will take on work as a guide");
+        earlyLives.add(outlander1 + outlander2 + " now occasionally will make money as a trapper");
+        earlyLives.add(outlander1 + outlander2 + " primarily lived in isolation as a hunter-gatherer in harmony with nature");
+        earlyLives.add(outlander1 + outlander2 + " occasionally take on work as a bounty hunter, as it allows for plenty of time traversing unexplored lands");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

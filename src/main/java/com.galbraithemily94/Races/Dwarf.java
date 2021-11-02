@@ -14,7 +14,7 @@ public class Dwarf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> dwarfTypes = new ArrayList<>(Arrays.asList("Hill", "Mountain", "Duergar", "Mark of Warding", "Kaladesh"));
+    private List<String> dwarfTypes = new ArrayList<>(Arrays.asList("Hill", "Mountain"));
 
 
     //Instance variables for character sheet
