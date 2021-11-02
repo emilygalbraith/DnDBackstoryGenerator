@@ -35,7 +35,7 @@ public class BackstoryGenerator {
         } if(character.getAgeRange() == null) {
             character.getRace().getRandomAge(character);
         } else {
-            race.getRandomAge(character, character.getAgeRange());
+            character.getRace().getRandomAge(character, character.getAgeRange());
         } if(character.getBackground() == null) {
             background.getRandomBackground(character, "");
         }
