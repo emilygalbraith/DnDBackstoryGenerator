@@ -1,7 +1,6 @@
 package com.galbraithemily94;
 
 import com.galbraithemily94.Backgrounds.*;
-import com.galbraithemily94.Races.Elf;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,15 +24,13 @@ public class Background {
     private static final String SAILOR = "Sailor";
     private static final String SOLDIER = "Soldier";
     private static final String URCHIN = "Urchin";
-    private static final List<String> BACKGROUND_LIST = new ArrayList<>(Arrays.asList(ACOLYTE, CHARLATAN, CRIMINAL, ENTERTAINER, FOLK_HERO, GLADIATOR, GUILD_ARTISAN, HERMIT, KNIGHT, NOBLE,OUTLANDER, PIRATE, SAGE, SAILOR, SOLDIER, URCHIN));
+    private static final String[] BACKGROUND_ARRAY = {ACOLYTE, CHARLATAN, CRIMINAL, ENTERTAINER, FOLK_HERO, GLADIATOR, GUILD_ARTISAN, HERMIT, KNIGHT, NOBLE,OUTLANDER, PIRATE, SAGE, SAILOR, SOLDIER, URCHIN};
+    private static final List<String> BACKGROUND_LIST = new ArrayList<>(Arrays.asList(BACKGROUND_ARRAY));
     //For character sheet
     private List<String> skillProficiencies;
     private List<String> languages;
 
-    public String[] getBackgroundArray() {
-        String[] backgroundArray = BACKGROUND_LIST.toArray(new String[0]);
-        return backgroundArray;
-    }
+    public String[] getBackgroundArray() { return BACKGROUND_ARRAY;}
 
     public void setCharacterBackground(Character character, String backgroundChoice){
         getRandomBackground(character, backgroundChoice);
@@ -41,7 +38,7 @@ public class Background {
 
     public void getRandomBackground(Character character, String backgroundChoice) {
         String characterBackground;
-        if(backgroundChoice.equals("")){
+        if(backgroundChoice == null || backgroundChoice == ""){
             Collections.shuffle(BACKGROUND_LIST);
             characterBackground = BACKGROUND_LIST.get(0);
         } else {

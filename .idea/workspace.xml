@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackgroundTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackstoryGeneratorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/CharacterTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DnDBackstoryGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DnDBackstoryGenerator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Pirate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Pirate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Backgrounds/Sage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Backgrounds/Sage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Race.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +51,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -51,7 +63,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.com.galbraithemily94 in DnDBackstoryGenerator">
     <configuration name="DnDCLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.DnDCLI" />
       <module name="DnDBackstoryGenerator" />
@@ -65,6 +77,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackgroundTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DnDBackstoryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.galbraithemily94" />
+      <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.BackgroundTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CharacterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DnDBackstoryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.galbraithemily94" />
+      <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.CharacterTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.galbraithemily94 in DnDBackstoryGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DnDBackstoryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.galbraithemily94" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.galbraithemily94 in DnDBackstoryGenerator" />
+        <item itemvalue="JUnit.CharacterTests" />
+        <item itemvalue="JUnit.BackgroundTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,5 +180,16 @@
         <watch expression="newCharacter" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$CharacterTests.ic" NAME="CharacterTests Coverage Results" MODIFIED="1635896731318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.galbraithemily94.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$BackgroundTests.ic" NAME="BackgroundTests Coverage Results" MODIFIED="1635895962688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.galbraithemily94.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$com_galbraithemily94_in_DnDBackstoryGenerator.ic" NAME="com.galbraithemily94 in DnDBackstoryGenerator Coverage Results" MODIFIED="1635942212054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.galbraithemily94.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -15,16 +15,11 @@ public class Race {
     protected static final String HALF_ORC = "Half-Orc";
     protected static final String HUMAN = "Human";
     protected static final String TIEFLING = "Tiefling";
-    protected static final List<String> RACE_LIST = new ArrayList<String>(Arrays.asList(DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING));
+    protected static final String[] RACE_ARRAY = {DRAGONBORN, DWARF, ELF, GNOME, HALF_ELF, HALFLING, HALF_ORC, HUMAN, TIEFLING};
+    protected static final List<String> RACE_LIST = new ArrayList<>(Arrays.asList(RACE_ARRAY));
 
-
-    public List<String> getRaceList() {
-        return RACE_LIST;
-    }
-    public String[] getRaceArray() {
-        String[] raceArray = RACE_LIST.toArray(new String[0]);
-        return raceArray;
-    }
+    public List<String> getRaceList() {return RACE_LIST;}
+    public String[] getRaceArray() {return RACE_ARRAY;}
 
     public String getRandomName(Character character, List<String> femaleNames, List<String> maleNames, List<String> clanNames) {
         String name;
