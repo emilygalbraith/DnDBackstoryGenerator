@@ -46,4 +46,18 @@ public class BackgroundTests {
         Assert.assertFalse(testCharacter.getBackgroundToString().isEmpty());
     }
 
+//    @Test
+//    public void getEarlyLife_ShouldReturnString() {
+//        String[] backgroundArray = {"Acolyte", "Charlatan", "Criminal", "Entertainer", "Folk Hero", "Gladiator", "Guild Artisan", "Hermit", "Knight", "Noble", "Outlander", "Pirate", "Sage", "Sailor", "Soldier", "Urchin"};
+//        int expected = 16;
+//        int actual = 0;
+//        for(String background : backgroundArray) {
+//            testBackground.getRandomBackground(testCharacter, background);
+//            if(testCharacter.getBackground().getEarlyLife(testCharacter).length() > 0) {
+//                actual++;
+//            }
+//        }
+//        Assert.assertEquals(expected, actual);
+//    }
+
 }

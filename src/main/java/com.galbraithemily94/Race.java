@@ -30,7 +30,7 @@ public class Race {
         Collections.shuffle(femaleNames);
         Collections.shuffle(maleNames);
         Collections.shuffle(nonBinaryNames);
-        if(character.getGender().equals("Females")){
+        if(character.getGender().equals("Female")){
             name = String.format("%s %s", femaleNames.remove(0), clanNames.remove(0));
         } else if(character.getGender().equals("Male")){
             name = String.format("%s %s", maleNames.remove(0), clanNames.remove(0));

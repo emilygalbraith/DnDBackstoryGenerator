@@ -10,7 +10,7 @@ public class Elf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> elfTypes = new ArrayList<>(Arrays.asList("Dark Elf", "High", "Wood"));
+    private String[] elfTypesArray = {"Dark Elf", "High", "Wood"};
 
 
     //Instance variables for character sheet
@@ -34,13 +34,11 @@ public class Elf extends Race {
 
 
     @Override
-    public String[] getSubTypeArray() {
-        String[] subTypeArray = elfTypes.toArray(new String[0]);
-        return subTypeArray;
-    }
+    public String[] getSubTypeArray() {return elfTypesArray;}
 
     @Override
     public void getRandomSubType(Character character) {
+        List<String> elfTypes = new ArrayList<>(Arrays.asList(elfTypesArray));
         Collections.shuffle(elfTypes);
         String subType = elfTypes.get(0);
         character.setRaceSubType(subType);
@@ -49,9 +47,9 @@ public class Elf extends Race {
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 250) + 60;
-        middleAged = (int) (Math.random() * 500) + 251;
-        old = (int) (Math.random() * 750) + 501;
+        young = (int) (Math.random() * 191) + 60;
+        middleAged = (int) (Math.random() * 250) + 251;
+        old = (int) (Math.random() * 250) + 501;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -66,7 +64,7 @@ public class Elf extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 750) + 60;
+        allAges = (int) (Math.random() * 691) + 60;
         age = allAges;
         character.setAge(age);
     }
@@ -78,6 +76,9 @@ public class Elf extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null){
+            character.setRandomGender();
+        }
         String elf1 = " Elves desire to live in balance with the wild, understand it rather than control it.";
         String elf2 = " Elves value the pursuit of arcane knowledge and the written word.";
         String elf3 = " Due to their long lives, elves value tradition and careful action.";

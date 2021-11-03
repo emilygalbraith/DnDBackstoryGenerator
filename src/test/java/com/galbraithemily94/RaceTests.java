@@ -6,6 +6,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class RaceTests {
     private Character testCharacter;
     private Race testRace;
@@ -18,6 +22,7 @@ public class RaceTests {
     private HalfOrc halfOrc;
     private Human human;
     private Tiefling tiefling;
+
 
     @Before
     public void setUp() {
@@ -35,100 +40,27 @@ public class RaceTests {
     }
 
     @Test
-    public void getRandomName_MaleDragonbornCharacter_ShouldReturnFourNames() {
-        int expected = 4;
+    public void setRace_ShouldSetExpectedRace() {
+        List<Race> raceList = new ArrayList<>(Arrays.asList(dragonborn, dwarf, elf, gnome, halfElf, halfling, halfOrc, human, tiefling));
+        int expected = 9;
         int actual = 0;
-        testCharacter.setGender("Male");
-        testCharacter.setRace(dragonborn);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
+        for(Race race : raceList) {
+            testRace.setRace(testCharacter, race.toString());
+            if(testCharacter.getRace().getClass().equals(race.getClass())) {
                 actual++;
             }
         }
-        Assert.assertEquals("Should have returned a name made up of four words", expected, actual);
+        Assert.assertEquals("Failed to set all 9 races", expected, actual);
     }
 
     @Test
-    public void getRandomName_FemaleDragonbornCharacter_ShouldReturnFourNames() {
-        int expected = 4;
-        int actual = 0;
-        testCharacter.setGender("Female");
-        testCharacter.setRace(dragonborn);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
-                actual++;
-            }
-        }
-        Assert.assertEquals("Should have returned a name made up of four words", expected, actual);
+    public void getRandomCharacterRace_GivenEmptyString_ShouldReturnRace() {
+        testRace.getRandomCharacterRace(testCharacter, "");
+        Assert.assertNotNull(testCharacter.getRace());
     }
 
-    @Test
-    public void getRandomName_NonBinaryDragonbornCharacter_ShouldReturnFourNames() {
-        int expected = 4;
-        int actual = 0;
-        testCharacter.setGender("Non-binary");
-        testCharacter.setRace(dragonborn);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
-                actual++;
-            }
-        }
-        Assert.assertEquals("Should have returned a name made up of four words", expected, actual);
-    }
 
-    @Test
-    public void getRandomName_NonBinaryDwarfCharacter_ShouldReturnTwoNames() {
-        int expected = 2;
-        int actual = 0;
-        testCharacter.setGender("Non-binary");
-        testCharacter.setRace(dwarf);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
-                actual++;
-            }
-        }
-        Assert.assertEquals("Should have returned a name made up of two words", expected, actual);
-    }
 
-    @Test
-    public void getRandomName_FemaleDwarfCharacter_ShouldReturnTwoNames() {
-        int expected = 2;
-        int actual = 0;
-        testCharacter.setGender("Female");
-        testCharacter.setRace(dwarf);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
-                actual++;
-            }
-        }
-        Assert.assertEquals("Should have returned a name made up of two words", expected, actual);
-    }
-
-    @Test
-    public void getRandomName_MaleDwarfCharacter_ShouldReturnTwoNames() {
-        int expected = 2;
-        int actual = 0;
-        testCharacter.setGender("Male");
-        testCharacter.setRace(dwarf);
-        testCharacter.getRace().getRandomName(testCharacter);
-        String[] characterName = testCharacter.getName().split(" ");
-        for(int i = 0; i < characterName.length; i++) {
-            if(characterName[i].length() > 0) {
-                actual++;
-            }
-        }
-        Assert.assertEquals("Should have returned a name made up of two words", expected, actual);
-    }
 
 }
 

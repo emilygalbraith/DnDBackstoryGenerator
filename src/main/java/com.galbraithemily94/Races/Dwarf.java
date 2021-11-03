@@ -14,7 +14,7 @@ public class Dwarf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> dwarfTypes = new ArrayList<>(Arrays.asList("Hill", "Mountain"));
+    private String[] dwarfTypesArray = {"Hill", "Mountain"};
 
 
     //Instance variables for character sheet
@@ -43,13 +43,11 @@ public class Dwarf extends Race {
 
 
     @Override
-    public String[] getSubTypeArray() {
-        String[] subTypeArray = dwarfTypes.toArray(new String[0]);
-        return subTypeArray;
-    }
+    public String[] getSubTypeArray() {return dwarfTypesArray;}
 
     @Override
     public void getRandomSubType(Character character) {
+        List<String> dwarfTypes = new ArrayList<>(Arrays.asList(dwarfTypesArray));
         Collections.shuffle(dwarfTypes);
         String subType = dwarfTypes.get(0);
         character.setRaceSubType(subType);
@@ -58,9 +56,9 @@ public class Dwarf extends Race {
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 50) + 16;
-        middleAged = (int) (Math.random() * 175) + 51;
-        old = (int) (Math.random() * 350) + 176;
+        young = (int) (Math.random() * 35) + 16;
+        middleAged = (int) (Math.random() * 125) + 51;
+        old = (int) (Math.random() * 175) + 176;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -75,7 +73,7 @@ public class Dwarf extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 350) + 16;
+        allAges = (int) (Math.random() * 335) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -83,6 +81,9 @@ public class Dwarf extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null){
+            character.setRandomGender();
+        }
         String dwarf1 = " To dwarves loyalty is a way of life that should striven for and rewarded.";
         String dwarf2 = " Dwarves are known for their masterful craftsmanship and avarice.";
         earlyLives.add("amongst the distant sound of pickaxes clashing with rock." + dwarf2 + " Helping mine mythril was hard and proud work, as it enabled the clan to both create legendary weapons and amass wealth");

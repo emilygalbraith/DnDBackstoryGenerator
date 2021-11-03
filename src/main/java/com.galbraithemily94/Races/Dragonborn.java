@@ -12,7 +12,7 @@ public class Dragonborn extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    List<String> draconicAncestryList = new ArrayList<>(Arrays.asList("Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red", "Silver", "White"));
+    String[] draconicAncestryArray = {"Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red", "Silver", "White"};
 
 
     //Below are things for character sheet creation.
@@ -48,9 +48,9 @@ public class Dragonborn extends Race {
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 30) + 6;
-        middleAged = (int) (Math.random() * 50) + 31;
-        old = (int) (Math.random() * 80) + 51;
+        young = (int) (Math.random() * 25) + 6;
+        middleAged = (int) (Math.random() * 20) + 31;
+        old = (int) (Math.random() * 30) + 51;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -65,19 +65,17 @@ public class Dragonborn extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 80) + 6;
+        allAges = (int) (Math.random() * 75) + 6;
         age = allAges;
         character.setAge(age);
     }
 
     @Override
-    public String[] getSubTypeArray() {
-        String[] subTypeArray = draconicAncestryList.toArray(new String[0]);
-        return subTypeArray;
-    }
+    public String[] getSubTypeArray() { return draconicAncestryArray; }
 
     @Override
     public void getRandomSubType(Character character) {
+        List<String> draconicAncestryList = new ArrayList<>(Arrays.asList(draconicAncestryArray));
         Collections.shuffle(draconicAncestryList);
         String draconicAncestry = draconicAncestryList.get(0);
         character.setRaceSubType(draconicAncestry);
@@ -91,6 +89,9 @@ public class Dragonborn extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null){
+            character.setRandomGender();
+        }
         String dragonborn1 = " Dragonborn are typically raised by one parent 3 years after hatching with help of whole clan.";
         String dragonborn2 = " To a Dragonborn, honor is more important than life itself, and cowardice outright repulsive.";
         earlyLives.add("a diligent student under the guidance of the whole clan. " + dragonborn1 + " Each elder helped excellence be achieved through lectures on clan history, combat, various trades, and honor");
