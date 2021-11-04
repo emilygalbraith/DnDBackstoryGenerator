@@ -14,6 +14,9 @@ public class Knight extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         earlyLives.add("was rather ordinary, until " + character.getSubjectPronoun().toLowerCase() + " was on the cusp of adulthood when " + character.getSubjectPronoun().toLowerCase() + " was recognized for a brave deed and knighted");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);

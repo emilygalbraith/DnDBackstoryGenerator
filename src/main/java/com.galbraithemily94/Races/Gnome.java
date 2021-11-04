@@ -13,7 +13,7 @@ public class Gnome extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> gnomeTypes = new ArrayList<>(Arrays.asList("Forest", "Rock", "Deep"));
+    private String[] gnomeTypesArray = { "Forest", "Rock", "Deep" };
 
 
     //Instance variables for character sheet
@@ -44,13 +44,11 @@ public class Gnome extends Race {
 
 
     @Override
-    public String[] getSubTypeArray() {
-        String[] subTypeArray = gnomeTypes.toArray(new String[0]);
-        return subTypeArray;
-    }
+    public String[] getSubTypeArray() { return gnomeTypesArray; }
 
     @Override
     public void getRandomSubType(Character character) {
+        List<String> gnomeTypes = new ArrayList<>(Arrays.asList(gnomeTypesArray));
         Collections.shuffle(gnomeTypes);
         String subType = gnomeTypes.get(0);
         character.setRaceSubType(subType);
@@ -59,9 +57,9 @@ public class Gnome extends Race {
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 40) + 16;
-        middleAged = (int) (Math.random() * 200) + 41;
-        old = (int) (Math.random() * 500) + 201;
+        young = (int) (Math.random() * 25) + 16;
+        middleAged = (int) (Math.random() * 160) + 41;
+        old = (int) (Math.random() * 300) + 201;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -76,7 +74,7 @@ public class Gnome extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 500) + 16;
+        allAges = (int) (Math.random() * 485) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -84,6 +82,9 @@ public class Gnome extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String gnome1 = " Gnomes have endless enthusiasm for life, despite how long they live they never get bored and instead worry of not having time for all they want to do.";
         String gnome2 = " Gnomes are known for the ingenuity as skilled engineers, alchemists, tinkers, and inventors.";
         earlyLives.add("encouraged to chase every last curiosity, from attempting flight to trying to dig straight through to the other side of the world." + gnome1 + " There was never a dull moment... unless a bone needed time to heal");

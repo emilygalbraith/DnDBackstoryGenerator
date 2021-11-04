@@ -14,6 +14,9 @@ public class GuildArtisan extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String guildArtisan1 = "became dedicated to a apprenticeship in the renowned ";
         String guildArtisan2 = character.getSubjectPronoun().toLowerCase() + " became a Master in " + character.getPossessivePronoun().toLowerCase() + " own right";
         earlyLives.add(guildArtisan1 + "Guild of Smiths and Metal-Forgers. After many days spent labouring under Raibeart, " + guildArtisan2);

@@ -14,6 +14,9 @@ public class Pirate extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String pirate1 = " changed course after hearing the story of an adventurer at sea. " + character.getSubjectPronoun() + " dreamed from that day forth of all the discoveries and adventures that lay in wait beyond the ocean's horizon. ";
         String pirate2 = "Unfortunately, during " + character.getPossessivePronoun().toLowerCase() + " first voyage at sea " + character.getPossessivePronoun().toLowerCase() + " ship was overtaken by pirates. ";
         String pirate3 = character.getSubjectPronoun() + " lived as a slave among the pirates for a good while, until one day " + character.getSubjectPronoun().toLowerCase() + " joined their ranks. ";

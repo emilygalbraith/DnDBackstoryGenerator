@@ -14,6 +14,9 @@ public class Sage extends Background {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String sage1 = " ended up, to the surprise of everyone, to be spent with " + character.getSubjectPronoun().toLowerCase() + " nose in a book at all times. Not just when " + character.getSubjectPronoun().toLowerCase() + " was supposed to. ";
         earlyLives.add(sage1 + character.getSubjectPronoun() + " was enamoured with the stars and wanted to become a renowned astronomer");
         earlyLives.add(sage1 + character.getPossessivePronoun() + " scholarly efforts were eventually recognized by a wizard who recruited " + character.getObjectPronoun().toLowerCase() + " as an apprentice");
