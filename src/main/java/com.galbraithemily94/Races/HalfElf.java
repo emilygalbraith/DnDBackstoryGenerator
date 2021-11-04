@@ -15,7 +15,7 @@ public class HalfElf extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halfElfTypes = new ArrayList<>(Arrays.asList("Dark Elf", "High", "Wood"));
+    private String[] halfElfTypesArray = { "Dark Elf", "High", "Wood" };
 
 
     //Instance variables for character sheet
@@ -44,13 +44,11 @@ public class HalfElf extends Race {
 
 
     @Override
-    public String[] getSubTypeArray() {
-        String[] subTypeArray = halfElfTypes.toArray(new String[0]);
-        return subTypeArray;
-    }
+    public String[] getSubTypeArray() { return halfElfTypesArray; }
 
     @Override
     public void getRandomSubType(Character character) {
+        List<String> halfElfTypes = new ArrayList<>(Arrays.asList(halfElfTypesArray));
         Collections.shuffle(halfElfTypes);
         String subType = halfElfTypes.get(0);
         character.setRaceSubType(subType);
@@ -59,9 +57,9 @@ public class HalfElf extends Race {
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 50) + 16;
-        middleAged = (int) (Math.random() * 130) + 51;
-        old = (int) (Math.random() * 180) + 131;
+        young = (int) (Math.random() * 35) + 16;
+        middleAged = (int) (Math.random() * 80) + 51;
+        old = (int) (Math.random() * 50) + 131;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -76,7 +74,7 @@ public class HalfElf extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 180) + 16;
+        allAges = (int) (Math.random() * 165) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -84,6 +82,9 @@ public class HalfElf extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String halfElf1 = " Half elves live between two worlds. Welcome by humans, but outliving them. Less welcomed by elves, and often feeling restless in their timeless societies.";
         String halfElf2 = " Half elves tend to be driven by wanderlust because of their long lives and lack of a true home or people.";
         String halfElf3 = " Half elves inherit their ambition, curiosity, and inventiveness from humans and love of nature and whimsy from elves.";
