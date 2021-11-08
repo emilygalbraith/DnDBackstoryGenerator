@@ -17,7 +17,9 @@ public class Knight extends Background {
         if(character.getGender() == null) {
             character.setRandomGender();
         }
-        earlyLives.add("was rather ordinary, until " + character.getSubjectPronoun().toLowerCase() + " was on the cusp of adulthood when " + character.getSubjectPronoun().toLowerCase() + " was recognized for a brave deed and knighted");
+        earlyLives.add("was rather ordinary, until " + character.getSubjectPronoun().toLowerCase() + " reached the cusp" +
+                " of adulthood when " + character.getSubjectPronoun().toLowerCase() + " got recognized for a brave deed" +
+                " and ended up being knighted");
         Collections.shuffle(earlyLives);
         return earlyLives.get(0);
     }

@@ -11,20 +11,22 @@ public class BackstoryGenerator {
 
     public String createBackstory(){
         characterInspection();
-        //TODO create backstory "mad libs"
-        int maxLineLength = 100;
+        int maxLineLength = 125;
+        int prettyLineLength = 100;
         String backstory = "";
         String characterInfo = String.format("\nName: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s \n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
         String earlyLife = createEarlyChildhood();
-        backstory = earlyLife;
+        String klassStory = createKlassStory();
+        backstory = earlyLife + klassStory;
         backstory = storyFormatter(backstory, maxLineLength);
-        String prettyLine = giveMeAPrettyLine(maxLineLength);
+        String prettyLine = giveMeAPrettyLine(prettyLineLength);
         return characterInfo + prettyLine + backstory;
     }
 
     public void characterInspection(){
         Race race = new Race();
         Background background = new Background();
+        Klass klass = new Klass();
         if(character.getRace() == null) {
             race.getRandomCharacterRace(character, "");
             character.getRace().getRandomSubType(character);
@@ -32,6 +34,8 @@ public class BackstoryGenerator {
             character.setRandomGender();
         } if(character.getName() == null) {
             character.getRace().getRandomName(character);
+        } if(character.getKlass() == null){
+            klass.getRandomCharacterKlass(character, "");
         } if(character.getAgeRange() == null) {
             character.getRace().getRandomAge(character);
         } else {
@@ -39,13 +43,18 @@ public class BackstoryGenerator {
         } if(character.getBackground() == null) {
             background.getRandomBackground(character, "");
         }
-        //TODO add checks for all other character attributes
     }
 
     public String createEarlyChildhood() {
         characterInspection();
         String earlyChildhood = String.format("%s grew up %s. %s childhood %s. ", character.getName(), character.getRace().getEarlyLife(character), character.getPossessivePronoun(), character.getBackground().getEarlyLife(character));
         return earlyChildhood;
+    }
+
+    public String createKlassStory() {
+        characterInspection();
+        String klassStory = String.format("%s ended up %s.", character.getName(), character.getKlass().getKlassStory(character));
+        return klassStory;
     }
 
     public String storyFormatter(String story, int maxLineLength) {

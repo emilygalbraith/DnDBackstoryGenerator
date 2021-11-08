@@ -58,7 +58,8 @@ public class BackstoryGeneratorTests {
         boolean hasName = testCharacter.getName() != null;
         boolean hasAge = testCharacter.getAge() > 0;
         boolean hasBackground = testCharacter.getBackground() != null;
-        isCharacterInspected = hasRace && hasRaceSubType && hasGender && hasName && hasAge && hasBackground;
+        boolean hasKlass = testCharacter.getKlass() != null;
+        isCharacterInspected = hasRace && hasRaceSubType && hasGender && hasName && hasAge && hasBackground && hasKlass;
         Assert.assertTrue("A variable in character was still null" ,isCharacterInspected);
     }
 
@@ -75,4 +76,5 @@ public class BackstoryGeneratorTests {
         containsExpectedStrings = containsName && containsGender && containsAge && containsRace && containsClass && containsBackground;
         Assert.assertTrue("Did not contain expected strings", containsExpectedStrings);
     }
+    //TODO test for klass story and motivation story in create backstory
 }

@@ -97,9 +97,9 @@ public class DnDCLI {
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CHOOSE_CLASS)) {
                         //Feature in progress
-//                        klassOptions = klass.getKlassArray();
+                        klassOptions = klass.getKlassArray();
                         String klassChoice = (String) menu.getChoiceFromOptions(klassOptions);
-                        
+                        klass.setKlass(newCharacter, klassChoice);
                     }
 
                     if(backstoryChoice.equals(BACKSTORY_GENERATOR_MENU_CHOOSE_BACKGROUND)){

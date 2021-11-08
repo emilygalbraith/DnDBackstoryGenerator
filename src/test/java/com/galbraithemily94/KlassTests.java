@@ -84,4 +84,11 @@ public class KlassTests {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void getKlassArray_ShouldReturnExpected() {
+        String[] expected = klassArray;
+        String[] actual = testKlass.getKlassArray();
+        Assert.assertArrayEquals("Array did not contain expected values", expected, actual);
+    }
+
 }
