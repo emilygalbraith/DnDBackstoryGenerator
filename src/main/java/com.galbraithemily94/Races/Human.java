@@ -14,7 +14,7 @@ public class Human extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> humanTypes = new ArrayList<>(Arrays.asList(""));
+    private String[] humanTypes = {""};
 
 
     //Instance variables for character sheet
@@ -43,23 +43,23 @@ public class Human extends Race {
 
     @Override
     public String[] getSubTypeArray() {
-        String[] subTypeArray = humanTypes.toArray(new String[0]);
-        return subTypeArray;
+        return humanTypes;
     }
 
     @Override
     public void getRandomSubType(Character character) {
-        Collections.shuffle(humanTypes);
-        String subType = humanTypes.get(0);
+        List<String> humanTypeList = new ArrayList<>(Arrays.asList(humanTypes));
+        Collections.shuffle(humanTypeList);
+        String subType = humanTypeList.get(0);
         character.setRaceSubType(subType);
     }
 
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 30) + 16;
-        middleAged = (int) (Math.random() * 50) + 31;
-        old = (int) (Math.random() * 80) + 51;
+        young = (int) (Math.random() * 15) + 16;
+        middleAged = (int) (Math.random() * 20) + 31;
+        old = (int) (Math.random() * 30) + 51;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -74,7 +74,7 @@ public class Human extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 80) + 16;
+        allAges = (int) (Math.random() * 65) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -82,6 +82,9 @@ public class Human extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null){
+            character.setRandomGender();
+        }
 //        String human1 = "\n";
 //        String human2 = "\n";
         earlyLives.add("in a quiet pastoral village helping on the family farm." + " It was happy, yet left plenty of time to dream of different places");

@@ -13,7 +13,7 @@ public class Tiefling extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> tieflingTypes = new ArrayList<>(Arrays.asList("Asmodeus", "Baalzebul", "Dispatcher", "Fierna", "Glasya", "Levistus", "Mammon", "Mephistopheles", "Zariel", "Abyssal"));
+    private String[] tieflingTypes = {"Asmodeus", "Baalzebul", "Dispatcher", "Fierna", "Glasya", "Levistus", "Mammon", "Mephistopheles", "Zariel", "Abyssal"};
 
 
     //Instance variables for character sheet
@@ -43,23 +43,23 @@ public class Tiefling extends Race {
 
     @Override
     public String[] getSubTypeArray() {
-        String[] subTypeArray = tieflingTypes.toArray(new String[0]);
-        return subTypeArray;
+        return tieflingTypes;
     }
 
     @Override
     public void getRandomSubType(Character character) {
-        Collections.shuffle(tieflingTypes);
-        String subType = tieflingTypes.get(0);
+        List<String> tieflingTypeList = new ArrayList<>(Arrays.asList(tieflingTypes));
+        Collections.shuffle(tieflingTypeList);
+        String subType = tieflingTypeList.get(0);
         character.setRaceSubType(subType);
     }
 
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 30) + 16;
-        middleAged = (int) (Math.random() * 50) + 31;
-        old = (int) (Math.random() * 90) + 51;
+        young = (int) (Math.random() * 15) + 16;
+        middleAged = (int) (Math.random() * 20) + 31;
+        old = (int) (Math.random() * 40) + 51;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -74,7 +74,7 @@ public class Tiefling extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 90) + 16;
+        allAges = (int) (Math.random() * 75) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -82,6 +82,9 @@ public class Tiefling extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null){
+            character.setRandomGender();
+        }
         String tiefling1 = " Tieflings tend to be proud and secretive by nature.";
         String tiefling2 = " Due to their evil ancestry, Tieflings are often unfairly outright hated.";
         earlyLives.add("in a small city where " + character.getPossessivePronoun().toLowerCase() + " parents owned a small shop." + tiefling2 + " Despite the terrible treatment, they were determined to change people's perception");

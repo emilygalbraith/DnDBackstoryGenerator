@@ -5,8 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfElf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfElf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalfElfTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalfElfTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Barbarian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Bard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Cleric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Druid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Fighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Monk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Paladin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Ranger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Rogue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Sorcerer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Warlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/BarbarianTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/BardTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/Cleric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/DruidTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/FighterTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/MonkTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/PaladinTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/RangerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/RogueTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/SorcererTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/WarlockTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTypeTests/WizardTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGeneratorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGeneratorTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HalfOrcTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HalfOrcTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HalflingTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HalflingTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HumanTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/HumanTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/TieflingTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/RaceTypesTests/TieflingTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfOrc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfOrc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Halfling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Halfling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Tiefling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Tiefling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackstoryGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackstoryGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalfOrcTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalfOrcTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalflingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HalflingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HumanTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/HumanTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/TieflingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/RaceTypesTests/TieflingTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +96,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.com.galbraithemily94 in DnDBackstoryGenerator">
+  <component name="RunManager" selected="JUnit.KlassTests">
     <configuration name="DnDCLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.DnDCLI" />
       <module name="DnDBackstoryGenerator" />
@@ -64,21 +106,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CharacterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DnDBackstoryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.galbraithemily94.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.galbraithemily94" />
-      <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.CharacterTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,6 +157,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KlassTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DnDBackstoryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.galbraithemily94" />
+      <option name="MAIN_CLASS_NAME" value="com.galbraithemily94.KlassTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.galbraithemily94 in DnDBackstoryGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DnDBackstoryGenerator" />
       <extension name="coverage">
@@ -146,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KlassTests" />
         <item itemvalue="JUnit.com.galbraithemily94 in DnDBackstoryGenerator" />
         <item itemvalue="JUnit.DwarfTests.getEarlyLife_ShouldReturnString" />
         <item itemvalue="JUnit.DragonbornTests.getRandomAge_Young_ShouldReturnIntInRange" />
         <item itemvalue="JUnit.DragonbornTests" />
-        <item itemvalue="JUnit.CharacterTests" />
       </list>
     </recent_temporary>
   </component>
@@ -184,19 +226,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/DnDCLI.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="5" />
+          <line>80</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -207,13 +244,16 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$DnDCLI.ic" NAME="DnDCLI Coverage Results" MODIFIED="1636332334080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.galbraithemily94.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$CharacterTests.ic" NAME="CharacterTests Coverage Results" MODIFIED="1635896731318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$BackgroundTests.ic" NAME="BackgroundTests Coverage Results" MODIFIED="1635895962688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$com_galbraithemily94_in_DnDBackstoryGenerator.ic" NAME="com.galbraithemily94 in DnDBackstoryGenerator Coverage Results" MODIFIED="1635991342457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$com_galbraithemily94_in_DnDBackstoryGenerator.ic" NAME="com.galbraithemily94 in DnDBackstoryGenerator Coverage Results" MODIFIED="1636333219371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
   </component>

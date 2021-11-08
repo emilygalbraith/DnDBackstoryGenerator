@@ -15,7 +15,7 @@ public class Halfling extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halflingTypes = new ArrayList<>(Arrays.asList("Lightfoot", "Stout"));
+    private String[] halflingTypes = {"Lightfoot", "Stout"};
 
 
     //Instance variables for character sheet
@@ -45,23 +45,23 @@ public class Halfling extends Race {
 
     @Override
     public String[] getSubTypeArray() {
-        String[] subTypeArray = halflingTypes.toArray(new String[0]);
-        return subTypeArray;
+        return halflingTypes;
     }
 
     @Override
     public void getRandomSubType(Character character) {
-        Collections.shuffle(halflingTypes);
-        String subType = halflingTypes.get(0);
+        List<String> halflingTypeList = new ArrayList<>(Arrays.asList(halflingTypes));
+        Collections.shuffle(halflingTypeList);
+        String subType = halflingTypeList.get(0);
         character.setRaceSubType(subType);
     }
 
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 30) + 16;
-        middleAged = (int) (Math.random() * 100) + 31;
-        old = (int) (Math.random() * 150) + 101;
+        young = (int) (Math.random() * 15) + 16;
+        middleAged = (int) (Math.random() * 70) + 31;
+        old = (int) (Math.random() * 50) + 101;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -76,7 +76,7 @@ public class Halfling extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 150) + 16;
+        allAges = (int) (Math.random() * 135) + 16;
         age = allAges;
         character.setAge(age);
     }
@@ -84,6 +84,9 @@ public class Halfling extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String halfling1 = " Halflings value family, community, and the simple pleasures of life beyond all else.";
         String halfling2 = " Halfings love stories and legends and tend to have a strong oral tradition.";
         String halfling3 = " Haflings love discovering new things, even simple things like new exotic food or unfamiliar clothing.";

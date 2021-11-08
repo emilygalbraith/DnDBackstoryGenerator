@@ -31,6 +31,7 @@ public class Character {
     public String getObjectPronoun() { return objectPronoun; }
     public String getName() { return name; }
     public Klass getKlass() { return klass; }
+    public String getKlassToString() { return klass.toString(); }
     public Background getBackground() { return background; }
     public String getBackgroundToString() { return background.toString(); }
 

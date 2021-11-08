@@ -43,6 +43,7 @@ public class BackstoryGenerator {
     }
 
     public String createEarlyChildhood() {
+        characterInspection();
         String earlyChildhood = String.format("%s grew up %s. %s childhood %s. ", character.getName(), character.getRace().getEarlyLife(character), character.getPossessivePronoun(), character.getBackground().getEarlyLife(character));
         return earlyChildhood;
     }
@@ -58,7 +59,7 @@ public class BackstoryGenerator {
                 lineLengthCounter = 0;
             }
             formatted.append(word + " ");
-            lineLengthCounter += word.length();
+            lineLengthCounter += word.length() + 1;
         }
         return formatted.toString();
     }

@@ -14,7 +14,7 @@ public class HalfOrc extends Race {
     private int middleAged;
     private int old;
     private int allAges;
-    private List<String> halfOrcTypes = new ArrayList<>(Arrays.asList("Gruumsh", ""));
+    private String[] halfOrcTypes = {"Gruumsh", ""};
 
 
     //Instance variables for character sheet
@@ -44,23 +44,23 @@ public class HalfOrc extends Race {
 
     @Override
     public String[] getSubTypeArray() {
-        String[] subTypeArray = halfOrcTypes.toArray(new String[0]);
-        return subTypeArray;
+        return halfOrcTypes;
     }
 
     @Override
     public void getRandomSubType(Character character) {
-        Collections.shuffle(halfOrcTypes);
-        String subType = halfOrcTypes.get(0);
+        List<String> halfOrcTypeList = new ArrayList<>(Arrays.asList(halfOrcTypes));
+        Collections.shuffle(halfOrcTypeList);
+        String subType = halfOrcTypeList.get(0);
         character.setRaceSubType(subType);
     }
 
     @Override
     public void getRandomAge(Character character, String ageRange) {
         int age = 0;
-        young = (int) (Math.random() * 25) + 12;
-        middleAged = (int) (Math.random() * 50) + 26;
-        old = (int) (Math.random() * 75) + 51;
+        young = (int) (Math.random() * 14) + 12;
+        middleAged = (int) (Math.random() * 25) + 26;
+        old = (int) (Math.random() * 25) + 51;
         if(ageRange.equals("Young")){
             age = young;
         } else if(ageRange.equals("Middle-Aged")) {
@@ -75,7 +75,7 @@ public class HalfOrc extends Race {
     @Override
     public void getRandomAge(Character character) {
         int age = 0;
-        allAges = (int) (Math.random() * 75) + 12;
+        allAges = (int) (Math.random() * 64) + 12;
         age = allAges;
         character.setAge(age);
     }
@@ -83,6 +83,9 @@ public class HalfOrc extends Race {
     @Override
     public String getEarlyLife(Character character) {
         List<String> earlyLives = new ArrayList<>();
+        if(character.getGender() == null) {
+            character.setRandomGender();
+        }
         String halfOrc1 = " Half-Orcs are unwelcome almost everywhere, among humans or orcs, and thus are known to thrive in challenging environments.";
         String halfOrc2 = " Half-Orcs are known to be free-spirited, brash, and typically underestimated due to Orc heritage despite their ability to be cunning.";
         earlyLives.add("an orc tribe as the child of their chief." + halfOrc1 + " " + character.getSubjectPronoun() + " often ended up the target of bullying by orcs, viewed as weaker and inferior to them");
