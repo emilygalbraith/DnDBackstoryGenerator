@@ -6,40 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="46a642f2-99b2-4327-bc86-d6d36bdca56f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Backgrounds/Sage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Backgrounds/Sage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Barbarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Barbarian.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Bard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Bard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Cleric.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Cleric.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Druid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Druid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Fighter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Fighter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Monk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Monk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Paladin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Paladin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Ranger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Ranger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Rogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Sorcerer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Sorcerer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Warlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Warlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Klasses/Wizard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGeneratorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/BackstoryGeneratorTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/BarbarianTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/BardTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/Cleric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/DruidTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/FighterTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/MonkTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/PaladinTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/RangerTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/RogueTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/SorcererTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/WarlockTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DnDBackstoryGenerator/com/galbraithemily94/KlassTypeTests/WizardTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Attributes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/HalfOrc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/HalfOrc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DnDBackstoryGenerator/com/galbraithemily94/Races/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Hermit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Hermit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Outlander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Outlander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Sage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Backgrounds/Soldier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/DnDCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/DnDCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Barbarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Bard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Bard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Cleric.java" afterDir="false" />
@@ -52,9 +30,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Sorcerer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Warlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Warlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Klasses/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Skills.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackstoryGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/BackstoryGeneratorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/galbraithemily94/KlassTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfOrc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/HalfOrc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.galbraithemily94/Races/Human.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,20 +206,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.galbraithemily94/BackstoryGenerator.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="newCharacter" />

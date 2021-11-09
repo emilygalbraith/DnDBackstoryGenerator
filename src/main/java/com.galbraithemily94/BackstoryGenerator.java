@@ -14,7 +14,9 @@ public class BackstoryGenerator {
         int maxLineLength = 125;
         int prettyLineLength = 100;
         String backstory = "";
-        String characterInfo = String.format("\nName: %s || Gender: %s || Age: %d || Race: %s %s || Class: || Background: %s \n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(), character.getRaceToString(), character.getBackgroundToString());
+        String characterInfo = String.format("\nName: %s || Gender: %s || Age: %d || Race: %s %s || Class: %s || " +
+                "Background: %s \n", character.getName(), character.getGender(), character.getAge(), character.getRaceSubType(),
+                character.getRaceToString(), character.getKlassToString(), character.getBackgroundToString());
         String earlyLife = createEarlyChildhood();
         String klassStory = createKlassStory();
         backstory = earlyLife + klassStory;
@@ -47,13 +49,15 @@ public class BackstoryGenerator {
 
     public String createEarlyChildhood() {
         characterInspection();
-        String earlyChildhood = String.format("%s grew up %s. %s childhood %s. ", character.getName(), character.getRace().getEarlyLife(character), character.getPossessivePronoun(), character.getBackground().getEarlyLife(character));
+        String earlyChildhood = String.format("%s grew up %s. %s childhood %s. ", character.getName(),
+                character.getRace().getEarlyLife(character), character.getPossessivePronoun(),
+                character.getBackground().getEarlyLife(character));
         return earlyChildhood;
     }
 
     public String createKlassStory() {
         characterInspection();
-        String klassStory = String.format("%s ended up %s.", character.getName(), character.getKlass().getKlassStory(character));
+        String klassStory = String.format("%s's adulthood %s.", character.getName(), character.getKlass().getKlassStory(character));
         return klassStory;
     }
 
