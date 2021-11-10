@@ -15,18 +15,14 @@ public class Wizard extends Klass {
     @Override
     public String getKlassStory(Character character) {
         List<String> klassStory = new ArrayList<>();
-        String wizard1 = "";
-        String wizard2 = "";
+        String wizard1 = " was spent in the pursuit of magic, " + character.getSubjectPronoun().toLowerCase() + " spent " +
+                "countless hours studying and practicing. At first combining the strange words, gestures, and occasional ingredients " +
+                "felt foreign, and " + character.getSubjectPronoun().toLowerCase() + " was only capable of weak spells. " +
+                "However, with each book read and secret chased down " + character.getPossessivePronoun().toLowerCase() +
+                " power and capability grew. ";
+        String wizard2 = " Now " + character.getSubjectPronoun().toLowerCase() + " proudly claims the title Wizard";
         klassStory.add(wizard1 + wizard2);
         Collections.shuffle(klassStory);
         return klassStory.get(0);
     }
-
-//    Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries.
-//    Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely
-//    the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these
-//    surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.
-//    Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and
-//    grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient
-//    creatures (such as the fey) that are steeped in magic.
 }
