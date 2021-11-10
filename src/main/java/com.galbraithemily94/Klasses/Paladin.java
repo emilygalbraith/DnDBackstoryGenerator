@@ -15,19 +15,18 @@ public class Paladin extends Klass {
     @Override
     public String getKlassStory(Character character) {
         List<String> klassStory = new ArrayList<>();
-        String paladin1 = "";
-        String paladin2 = "";
+        String paladin1 = " defined by a desire to do good and help people. When " + character.getSubjectPronoun().toLowerCase() +
+                " met a paladin, " + character.getSubjectPronoun().toLowerCase() + " immediately wanted to learn " +
+                "all about that paladin's life. The paladin explained how their order works, how they swear oaths to stand for " +
+                "the good things of the world and fight evil. Paladins draw their power and magic from those oaths and their " +
+                "commitment to justice. ";
+        String paladin2 = character.getSubjectPronoun() + " ended up joining that order and swearing those sacred oaths. " +
+                character.getSubjectPronoun() + " began " + character.getPossessivePronoun().toLowerCase() + " training as soon" +
+                " as possible. The training consisted of mastering a variety of weapons and armor, as well as learning to wield " +
+                "the magical power to heal, smite, and protect";
         klassStory.add(paladin1 + paladin2);
         Collections.shuffle(klassStory);
         return klassStory.get(0);
     }
-
-//    A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the encroaching
-//    darkness, and to hunt the forces of evil wherever they lurk. Different paladins focus on various aspects of the cause of
-//    righteousness, but all are bound by the oaths that grant them power to do their sacred work. Although many paladins
-//    are devoted to gods of good, a paladin’s power comes as much from a commitment to justice itself as it does from a god.
-//    Paladins train for years to learn the skills of combat, mastering a variety of weapons and armor. Even so,
-//    their martial skills are secondary to the magical power they wield: power to heal the sick and injured, to smite the
-//    wicked and the undead, and to protect the innocent and those who join them in the fight for justice.
 
 }

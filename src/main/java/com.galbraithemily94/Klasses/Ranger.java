@@ -15,8 +15,13 @@ public class Ranger extends Klass {
     @Override
     public String getKlassStory(Character character) {
         List<String> klassStory = new ArrayList<>();
-        String ranger1 = "";
-        String ranger2 = "";
+        String ranger1 = " ended up being spent at the edges of civilization, hunting down monsters. " + character.getSubjectPronoun() +
+                " learned to hunt as most deadly predators do, silently tracking " + character.getPossessivePronoun().toLowerCase() +
+                " prey until the moment to strike came. After spending so much time in the wilds, " +
+                character.getSubjectPronoun().toLowerCase() + " developed the ability to harness nature's powers and cast spells " +
+                "that enhance " + character.getPossessivePronoun().toLowerCase() + " speed, stealth, and much else. ";
+        String ranger2 = character.getPossessivePronoun() + " combat skills grew with each new foe, eventually being honed " +
+                "on specific techniques geared to " + character.getPossessivePronoun().toLowerCase() + " their favorite prey";
         klassStory.add(ranger1 + ranger2);
         Collections.shuffle(klassStory);
         return klassStory.get(0);

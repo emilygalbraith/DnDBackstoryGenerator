@@ -18,7 +18,7 @@ public class Monk extends Klass {
         List<String> klassStory = new ArrayList<>();
         String monk1 = " found direction from an unusual magic. " + character.getSubjectPronoun() + " could feel it flowing " +
                 "through " + character.getPossessivePronoun().toLowerCase() + " body as he moved, especially when moving with " +
-                "intention. " + character.getSubjectPronoun() + " started to start every day with practicing martial arts " +
+                "intention. " + character.getSubjectPronoun() + " started beginning every day with practicing martial arts " +
                 "as it felt strongest then. ";
         String monk2 = character.getSubjectPronoun() + " found a word for this power, ki. " + character.getSubjectPronoun() +
                 " learned how to harness this power to exceed " + character.getPossessivePronoun().toLowerCase() + " capabilities. " +
