@@ -15,21 +15,14 @@ public class Cleric extends Klass {
     @Override
     public String getKlassStory(Character character) {
         List<String> klassStory = new ArrayList<>();
-        String cleric1 = "";
-        String cleric2 = "";
+        String cleric1 = " became shaped by " + character.getPossessivePronoun().toLowerCase() + " ever growing relationship " +
+                " with a deity. It is hard to say exactly when, but at some point, " + character.getSubjectPronoun().toLowerCase() +
+                " started to feel an even deeper intuitive connection and power inside. ";
+        String cleric2 = "As " + character.getPossessivePronoun().toLowerCase() + " devotion grew, so did " +
+                character.getPossessivePronoun().toLowerCase() + " intuitive sense of " + character.getPossessivePronoun().toLowerCase() +
+                " deity's will. With that came increasing ability to heal, inspire, and many other magical powers";
         klassStory.add(cleric1 + cleric2);
         Collections.shuffle(klassStory);
         return klassStory.get(0);
     }
-
-//    Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they
-//    serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.
-//    Divine magic, as the name suggests, is the power of the gods, flowing from them into the world. Clerics are conduits
-//    for that power, manifesting it as miraculous effects. The gods don’t grant this power to everyone who seeks it,
-//    but only to those chosen to fulfill a high calling. Harnessing divine magic doesn’t rely on study or training.
-//    A cleric might learn formulaic prayers and ancient rites, but the ability to cast cleric spells relies on devotion
-//    and an intuitive sense of a deity’s wishes. Clerics combine the helpful magic of healing and inspiring their allies
-//    with spells that harm and hinder foes. They can provoke awe and dread, lay curses of plague or poison, and even
-//    call down flames from heaven to consume their enemies. For those evildoers who will benefit most from a mace to the
-//    head, clerics depend on their combat training to let them wade into melee with the power of the gods on their side.
 }
