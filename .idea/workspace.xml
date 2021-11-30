@@ -55,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/schoolshit/emilyharsha-java/module-1/18_Review/review-student/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,7 +66,7 @@
       <module name="DnDBackstoryGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="PATTERN" value="com.galbraithemily94.background.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +109,7 @@
       <module name="DnDBackstoryGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="PATTERN" value="com.galbraithemily94.background.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,7 +125,7 @@
       <module name="DnDBackstoryGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="PATTERN" value="com.galbraithemily94.background.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,7 +140,7 @@
       <module name="DnDBackstoryGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.galbraithemily94.*" />
+          <option name="PATTERN" value="com.galbraithemily94.background.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,6 +194,9 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$com_galbraithemily94_in_DnDBackstoryGenerator.ic" NAME="com.galbraithemily94 in DnDBackstoryGenerator Coverage Results" MODIFIED="1636333219371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.galbraithemily94.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$DnDCLI.ic" NAME="DnDCLI Coverage Results" MODIFIED="1636332334080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
@@ -201,9 +204,6 @@
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$BackgroundTests.ic" NAME="BackgroundTests Coverage Results" MODIFIED="1635895962688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.galbraithemily94.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/DnDBackstoryGenerator$com_galbraithemily94_in_DnDBackstoryGenerator.ic" NAME="com.galbraithemily94 in DnDBackstoryGenerator Coverage Results" MODIFIED="1636333219371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.galbraithemily94.*</FILTER>
     </SUITE>
   </component>

@@ -1,8 +1,7 @@
 package com.galbraithemily94.RaceTypesTests;
 
 import com.galbraithemily94.Character;
-import com.galbraithemily94.Races.HalfElf;
-import com.galbraithemily94.Races.Halfling;
+import com.galbraithemily94.race.Halfling;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package com.galbraithemily94;
 
 
-import com.galbraithemily94.Races.*;
+import com.galbraithemily94.race.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

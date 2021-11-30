@@ -1,8 +1,7 @@
 package com.galbraithemily94.RaceTypesTests;
 
 import com.galbraithemily94.Character;
-import com.galbraithemily94.Races.Elf;
-import com.galbraithemily94.Races.Gnome;
+import com.galbraithemily94.race.Gnome;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

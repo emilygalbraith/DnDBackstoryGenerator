@@ -1,7 +1,7 @@
 package com.galbraithemily94.RaceTypesTests;
 
 import com.galbraithemily94.Character;
-import com.galbraithemily94.Races.Dragonborn;
+import com.galbraithemily94.race.Dragonborn;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

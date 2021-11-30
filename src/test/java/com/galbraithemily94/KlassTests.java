@@ -1,6 +1,6 @@
 package com.galbraithemily94;
 
-import com.galbraithemily94.Klasses.*;
+import com.galbraithemily94.klass.*;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +8,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
 
 public class KlassTests {
     private Character testCharacter;
